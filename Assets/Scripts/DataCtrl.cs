@@ -15,7 +15,10 @@ public class DataCtrl : MonoBehaviour
         get { return Instance; }
     }
     public OrderData orderData;
+    public PlayerData playerData;
+
     public List<Item> items = new List<Item>();
+    public List<Order> orders = new List<Order> ();
 
     // Start is called before the first frame update
     private void Awake()
@@ -26,7 +29,8 @@ public class DataCtrl : MonoBehaviour
     // Update is called once per frame
     void Start()
     {
-        
+        playerData = new PlayerData(0);
+
     }
     
     public struct PlayerData
@@ -35,6 +39,7 @@ public class DataCtrl : MonoBehaviour
         public long energy;
         public long gold;
         public long diamond;
+        public int orderCount;
 
         public PlayerData(long _gold)
         {
@@ -42,23 +47,60 @@ public class DataCtrl : MonoBehaviour
             energy = 0;
             level = 0;
             diamond = 0;
+            orderCount = 0;
         }
         
     }
     public struct OrderData
     {
         public int orderNum;
-        public int[] orders;
+        public int[] orderItems;
         
         public OrderData(int _orderNum)
         {
             orderNum = _orderNum;
-            orders = new int[orderNum];
+            orderItems = new int[orderNum];
         }
     }
 
 }
 
+public class Order
+{
+    public static float[] orderNumPercent = {0.3f, 0.3f, 0.3f}; //주문아이템개수 정해지는확률
+    public static float[] fanPercent = { 0.25f, 0.25f, 0.25f, 0.25f }; //휀걸 정해지는확률
+    public static Sprite[] orderSprites = new Sprite[3];
+    public static Sprite[] fangirlSprites = new Sprite[4];
+
+    public void LoadorderSprites()
+    {
+        //공장1
+        orderSprites[0] = Resources.Load<Sprite>("SpriteGYB/128/03 order1");
+        orderSprites[1] = Resources.Load<Sprite>("SpriteGYB/128/03 order2");
+        orderSprites[2] = Resources.Load<Sprite>("SpriteGYB/128/03 order3");
+    }
+    public void LoadfangirlSprites()
+    {
+        //공장1
+        fangirlSprites[0] = Resources.Load<Sprite>("SpriteKSK/팬걸/팬걸A128");
+        fangirlSprites[1] = Resources.Load<Sprite>("SpriteKSK/팬걸/팬걸B128");
+        fangirlSprites[2] = Resources.Load<Sprite>("SpriteKSK/팬걸/팬걸C128");
+        fangirlSprites[3] = Resources.Load<Sprite>("SpriteKSK/팬걸/팬걸D128");
+
+    }
+    public int orderItemNum; //주문아이템개수
+    public int fanCode;
+    public Sprite orderSprite;
+    public Sprite fangirlSprite;
+
+    public Order(int _orderItemNum, int _fanCdoe)
+    {
+        orderItemNum = _orderItemNum;
+        fanCode = _fanCdoe;
+        orderSprite = orderSprites[orderItemNum-1];
+        fangirlSprite = fangirlSprites[fanCode];
+    }
+}
 public class Item
 {
     public static int ItemNum = 59;
@@ -78,7 +120,7 @@ public class Item
     //스프라이트 코드 부여
     public static Sprite[] itemSprites = new Sprite[59];
 
-    //드롭되는 스프라이트 
+    //드롭되는 스프라이트 LOAD, 배열에 저장
     public void LoadItemSprites()
     {
         //공장1
