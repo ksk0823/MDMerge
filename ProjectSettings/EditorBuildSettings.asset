@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/MapMode.unity
+    guid: 3a3a73cd45301314180acf1652d479be
+  - enabled: 1
+    path: Assets/Scenes/MergeMode.unity
+    guid: c17ef3d67a2afe94c8038c507ce7ded8
   m_configObjects: {}
