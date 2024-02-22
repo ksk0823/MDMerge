@@ -19,12 +19,15 @@ public class PlayerData : MonoBehaviour
     {
         instance = this;
     }
+
     public void test_EMJ()
     {
+        level = 1;
         energy = 0;
         money = 0;
         jewel = 0;
     }
+
     public int energy;
     public int money;
     public int jewel;

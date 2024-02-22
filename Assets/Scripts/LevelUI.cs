@@ -14,7 +14,7 @@ public class LevelUI : MonoBehaviour
     }
     private void SetLevelText()
     {
-        levelText.SetText(PlayerData.instance.jewel.ToString());
+        levelText.SetText(PlayerData.instance.level.ToString());
     }
     // Update is called once per frame
     void Update()

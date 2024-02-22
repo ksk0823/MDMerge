@@ -5,16 +5,19 @@ using UnityEngine;
 
 public class EnergyUI : MonoBehaviour
 {
-    public TMP_Text energyText;
+    // private PlayerData playerData;
+
+    public TextMeshProUGUI energyText;
     // Start is called before the first frame update
     void Start()
     {
         PlayerData.instance.test_EMJ();
+        energyText = GetComponent<TextMeshProUGUI>();
         SetEnergyText();
     }
     private void SetEnergyText()
     {
-        energyText.SetText(PlayerData.instance.energy.ToString());
+        energyText.text = PlayerData.instance.energy.ToString();
     }
     // Update is called once per frame
     void Update()
