@@ -10,5 +10,9 @@ public class ShopUIContent : MonoBehaviour
     public Image[] images;
     public TextMeshProUGUI[] texts;
     public Button button;
+    [Header("Shop Item Info")]
     public int index;
+    public string contentName;
+    public int money;
+    public int energy;
 }
