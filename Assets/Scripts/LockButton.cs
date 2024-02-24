@@ -12,7 +12,6 @@ public class LockButton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        LockPanel.SetActive(false);
     }
 
     // Update is called once per frame
