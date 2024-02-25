@@ -5,8 +5,9 @@ using UnityEngine;
 public class GeneratorItemData : MonoBehaviour
 {
     public int id;
-    public int firstItemId;
-    public int lastItemId;
+
+    public List<MaterialItemData> materialsData = new List<MaterialItemData>();
+
     // È®·ü
     public float[] prob;
 }

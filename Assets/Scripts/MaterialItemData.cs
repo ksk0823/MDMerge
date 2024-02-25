@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MaterialItemData : MonoBehaviour
+[System.Serializable]
+public class MaterialItemData
 {
     public int id;
+    public int categoryID;
+    public Sprite itemImg;
     public int priceForPlayer;
     public int priceForOrder;
     public float exp;
