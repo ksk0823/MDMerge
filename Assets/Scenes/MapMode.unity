@@ -7257,8 +7257,8 @@ MonoBehaviour:
   jem: 0
   unlockText: {fileID: 942898609}
   messageText: {fileID: 937366529}
-  lockButton: {fileID: 0}
-  star: {fileID: 0}
+  lockButton: {fileID: 723506416}
+  star: {fileID: 21300000, guid: eb3ddc64f2b39df4ba4762c7ab9b62e2, type: 3}
 --- !u!114 &942898608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8522,7 +8522,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1054225284
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8560,8 +8560,8 @@ MonoBehaviour:
   jem: 100
   unlockText: {fileID: 1054225287}
   messageText: {fileID: 953877312}
-  lockButton: {fileID: 0}
-  star: {fileID: 0}
+  lockButton: {fileID: 190317745}
+  star: {fileID: 21300000, guid: eb3ddc64f2b39df4ba4762c7ab9b62e2, type: 3}
 --- !u!114 &1054225286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9656,8 +9656,8 @@ MonoBehaviour:
   jem: 0
   unlockText: {fileID: 1293986692}
   messageText: {fileID: 1332560871}
-  lockButton: {fileID: 0}
-  star: {fileID: 0}
+  lockButton: {fileID: 2007729139}
+  star: {fileID: 21300000, guid: eb3ddc64f2b39df4ba4762c7ab9b62e2, type: 3}
 --- !u!114 &1293986691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13955,8 +13955,8 @@ MonoBehaviour:
   jem: 50
   unlockText: {fileID: 1925062200}
   messageText: {fileID: 204435676}
-  lockButton: {fileID: 0}
-  star: {fileID: 0}
+  lockButton: {fileID: 306560398}
+  star: {fileID: 21300000, guid: eb3ddc64f2b39df4ba4762c7ab9b62e2, type: 3}
 --- !u!114 &1925062199
 MonoBehaviour:
   m_ObjectHideFlags: 0

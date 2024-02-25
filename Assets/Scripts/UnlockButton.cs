@@ -47,7 +47,10 @@ public class UnlockButton : MonoBehaviour
             PlayerData.instance.money -= money;
             PlayerData.instance.jewel-= jem;
             unlockText.SetText("해금완료");
-            //lockButton.GetComponent<Image>().sprite = Resources.Load<Sprite>("Assets/Scenes/SpriteGYB/128/# star.png");
+            //Sprite starSprite = Resources.Load<Sprite>("Scenes/SpriteGYB/128/# star");
+            //if (starSprite != null)
+            //    lockButton.GetComponent<Image>().sprite = starSprite;
+            //lockButton.GetComponent<Image>().sprite = Resources.Load<Sprite>("Scenes/SpriteGYB/128/# star");
             lockButton.GetComponent<Image>().sprite = star;
             return;
         }
