@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DragManager : MonoBehaviour
+public class DragManager : MonoBehaviour, IBeginDragHandler, IEndDragHandler,IDragHandler
 {
     public static GameObject beingDraggedItem;
     Vector3 startPosition;
@@ -30,7 +30,7 @@ public class DragManager : MonoBehaviour
         transform.position = Input.mousePosition;
     }
 
-    public void OnEndDrag() 
+    public void OnEndDrag(PointerEventData eventData) 
     {
         beingDraggedItem = null;
         GetComponent<CanvasGroup>().blocksRaycasts = true;
