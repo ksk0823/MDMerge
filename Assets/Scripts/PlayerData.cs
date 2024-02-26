@@ -42,4 +42,5 @@ public class PlayerData : MonoBehaviour
     public int exp;
     public int orderCnt; //지금 order개수
     public int lockNum;
+    public Dictionary<MaterialItemData, int> myItems = new Dictionary<MaterialItemData, int>();
 }

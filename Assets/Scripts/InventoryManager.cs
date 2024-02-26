@@ -47,6 +47,9 @@ public class InventoryManager : MonoBehaviour
             
             GameObject go = Instantiate(itemPrefab, emptySlots[randomNum].transform.position, Quaternion.identity);
             go.GetComponent<MaterialCtrl>().InitMaterial(generatorsData[categoryID].materialsData[0], emptySlots[randomNum].transform);
+
+            //order작업을 위해 아이템 생성시 PlayerData.myItems 업데이트
+            PlayerData.instance.myItems.Add(go.GetComponent<MaterialItemData>(), randomNum);
         }
     }
 
@@ -62,6 +65,9 @@ public class InventoryManager : MonoBehaviour
 
             GameObject go = Instantiate(itemPrefab, emptySlots[randomNum].transform.position, Quaternion.identity);
             go.GetComponent<MaterialCtrl>().InitMaterial(generatorsData[randomCategoryID].materialsData[0], emptySlots[randomNum].transform);
+            
+            //order작업을 위해 아이템 생성시 PlayerData.myItems 업데이트
+            PlayerData.instance.myItems.Add(go.GetComponent<MaterialItemData>(), randomNum);
         }
     }
 
