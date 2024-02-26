@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4179217693894042497}
   - component: {fileID: 2105652425373732867}
-  - component: {fileID: 5183473128036310735}
+  - component: {fileID: 6024511387354983667}
   m_Layer: 5
   m_Name: Fangirl
   m_TagString: Untagged
@@ -45,7 +45,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1262664758856989801}
   m_CullTransparentMesh: 1
---- !u!114 &5183473128036310735
+--- !u!114 &6024511387354983667
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 717528295958892862}
   - component: {fileID: 2827767577782997581}
   m_Layer: 5
-  m_Name: itemImage (1)
+  m_Name: itemImage1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -185,7 +185,6 @@ RectTransform:
   - {fileID: 7637610519283930117}
   - {fileID: 6394656531176040404}
   - {fileID: 8114019152684896527}
-  - {fileID: 5992386337513064922}
   m_Father: {fileID: 4243888927010561262}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -243,7 +242,7 @@ GameObject:
   - component: {fileID: 8048542980200548639}
   - component: {fileID: 1604691926498130111}
   m_Layer: 5
-  m_Name: itemImage (2)
+  m_Name: itemImage2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -317,6 +316,8 @@ GameObject:
   - component: {fileID: 5992386337513064922}
   - component: {fileID: 3016469933324423248}
   - component: {fileID: 4115694548024818818}
+  - component: {fileID: 4615204052151714980}
+  - component: {fileID: 5157557869503954348}
   m_Layer: 5
   m_Name: sellBtn
   m_TagString: Untagged
@@ -337,11 +338,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2067574929189932169}
-  m_Father: {fileID: 2029844351078990978}
+  m_Father: {fileID: 4243888927010561262}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -50, y: 105}
+  m_AnchoredPosition: {x: 50, y: 77}
   m_SizeDelta: {x: 155, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3016469933324423248
@@ -382,6 +383,76 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4615204052151714980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5630483164273462849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 4115694548024818818}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5157557869503954348}
+        m_TargetAssemblyTypeName: orderSellBtn, Assembly-CSharp
+        m_MethodName: SellOrder
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5157557869503954348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5630483164273462849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd0325cc4511a0a4f9c650df59ac9f12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  priceText: {fileID: 6572634940913578898}
+  expText: {fileID: 4622230553156661392}
 --- !u!1 &5651674377095952901
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,6 +464,7 @@ GameObject:
   - component: {fileID: 4243888927010561262}
   - component: {fileID: 841701925951596821}
   - component: {fileID: 2316858414801656524}
+  - component: {fileID: 869004770252034102}
   m_Layer: 0
   m_Name: CustomerSlotPrefab
   m_TagString: Untagged
@@ -414,6 +486,7 @@ RectTransform:
   m_Children:
   - {fileID: 4179217693894042497}
   - {fileID: 2029844351078990978}
+  - {fileID: 5992386337513064922}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -459,6 +532,27 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &869004770252034102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5651674377095952901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54b9c33cdb03d424382bade282089f15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orderObject: {fileID: 5651674377095952901}
+  priceText: {fileID: 0}
+  expText: {fileID: 0}
+  orderId: 0
+  orderItemNum: 0
+  orderItems: []
+  orderPrice: 0
+  orderExp: 0
+  orderJem: 0
 --- !u!1 &6906624935132462918
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,7 +565,7 @@ GameObject:
   - component: {fileID: 4019858649708439380}
   - component: {fileID: 6227598612697553416}
   m_Layer: 5
-  m_Name: itemImage
+  m_Name: itemImage0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -813,7 +907,6 @@ GameObject:
   - component: {fileID: 2067574929189932169}
   - component: {fileID: 700840089063535175}
   - component: {fileID: 1792020480794879095}
-  - component: {fileID: 4210155937570888068}
   m_Layer: 5
   m_Name: sellText
   m_TagString: Untagged
@@ -937,59 +1030,3 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &4210155937570888068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9199950554949318076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1792020480794879095}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 9199950554949318076}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2

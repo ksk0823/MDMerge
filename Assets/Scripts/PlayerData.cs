@@ -29,7 +29,9 @@ public class PlayerData : MonoBehaviour
         playerName = "김사원";
         groupName = "클린소년단";
         exp = 10;
+        orderCnt = 0;
     }
+   
 
     public int energy;
     public int money;
@@ -38,6 +40,6 @@ public class PlayerData : MonoBehaviour
     public string groupName;
     public int level;
     public int exp;
-    public int orderNum;
+    public int orderCnt; //지금 order개수
     public int lockNum;
 }
