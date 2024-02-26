@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEditor;
+using TMPro;
 
 public class GenerateOrder : MonoBehaviour
 {
@@ -83,20 +84,27 @@ public class GenerateOrder : MonoBehaviour
             newPrefab.GetComponent<OrderObject>().orderItemNum = OrderItemNum;
             newPrefab.GetComponent<OrderObject>().orderItems = PickItem(OrderItemNum);
 
-            for(int i=0; i<OrderItemNum; i++)
+            int price=0, jem=0;
+            float exp = 0;
+
+            for (int i=0; i<OrderItemNum; i++)
             {
                 newPrefab.transform.Find("OrderSlot").Find("itemImage" + i.ToString()).GetComponent<Image>().sprite
                     = newPrefab.GetComponent<OrderObject>().orderItems[i].itemImg;
-
+                price += newPrefab.GetComponent<OrderObject>().orderItems[i].priceForOrder;
+                exp += newPrefab.GetComponent<OrderObject>().orderItems[i].exp;
+                //jem += newPrefab.GetComponent<OrderObject>().orderItems[i].jem;
             }
 
             //보상 가격,경험치,보석 설정
-
-
+            newPrefab.GetComponent<OrderObject>().orderPrice = price;
+            newPrefab.GetComponent<OrderObject>().orderExp = exp;
+            newPrefab.GetComponent<OrderObject>().orderJem = jem;
 
             //그거에 따라 priceText랑 expText바꿔주기
+            newPrefab.transform.Find("OrderSlot").Find("priceText").GetComponent<TMP_Text>().SetText(price.ToString());
+            newPrefab.transform.Find("OrderSlot").Find("expText").GetComponent<TMP_Text>().SetText(exp.ToString());
 
-           
 
             newPrefab.SetActive(true);
 

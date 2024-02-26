@@ -15,7 +15,7 @@ public class OrderObject : MonoBehaviour
     //생성 시 orderNum 넣어서 배열 초기화
     public MaterialItemData[] orderItems;
     public int orderPrice;
-    public int orderExp;
+    public float orderExp;
     public int orderJem;
 
     private void Start()
