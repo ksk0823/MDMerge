@@ -88,8 +88,11 @@ public class GenerateOrder : MonoBehaviour
 
             newPrefab.GetComponent<OrderObject>().orderItemNum = OrderItemNum;
             newPrefab.GetComponent<OrderObject>().orderItems = PickItem(OrderItemNum);
+            if (newPrefab.GetComponent<OrderObject>().orderItems[0] == null) 
+                Debug.Log("애초에 저장이안됨"); //이게 문제가 아님  여기선 됨... null이 아님..
+            
 
-            int price=0, jem=0;
+            int price =0, jem=0;
             float exp = 0;
 
             for (int i=0; i<OrderItemNum; i++)

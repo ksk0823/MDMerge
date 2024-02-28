@@ -20,6 +20,6 @@ public class OrderObject : MonoBehaviour
 
     private void Start()
     {
-        orderItems = new MaterialItemData[orderItemNum];
+        //orderItems = new MaterialItemData[orderItemNum];
     }
 }
