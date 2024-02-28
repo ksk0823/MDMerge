@@ -17,7 +17,10 @@ public class MaterialCtrl : MonoBehaviour
         imageCtrl.sprite = material.itemImg;
         transform.SetParent(newParent);
     }
-
+    public void UpdateNowSeleted()
+    {
+        transform.parent.parent.parent.Find("SellButton").GetComponent<SellJustOneButton>().nowSelected = transform.gameObject;
+    }
     public void ShowItemInfo()
     {
         bool maxLv = false;
