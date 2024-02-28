@@ -13,6 +13,8 @@ public class GenerateOrder : MonoBehaviour
 
     public GameObject contentPanel; // Content Panel을 참조하는 변수
 
+    Coroutine myCoroutine; //코루틴 실행중인지 확인을 위한 변수
+
     public Sprite[] fanSprites = new Sprite[4];
     public Sprite[] orderSprites = new Sprite[3];
 
@@ -45,14 +47,16 @@ public class GenerateOrder : MonoBehaviour
         Furnace1 = GameObject.Find("FurnaceData1");
         Furnace2 = GameObject.Find("FurnaceData2");
 
-        StartCoroutine(CreateCustomerCoroutine());
 
     }
 
     // Update is called once per frame
     void Update()
     {
-    
+        if (myCoroutine == null)
+        {
+            myCoroutine = StartCoroutine(CreateCustomerCoroutine());
+        }
     }
 
     IEnumerator CreateCustomerCoroutine()
@@ -114,6 +118,8 @@ public class GenerateOrder : MonoBehaviour
         }
 
         Debug.LogWarning("Prefab의 한계 수를 초과하여 더 이상 생성할 수 없습니다.");
+
+        myCoroutine = null;
     }
     public MaterialItemData[] PickItem(int ordernum) //아이템 정하는 함수
     {
