@@ -14,7 +14,7 @@ public class LevelUI : MonoBehaviour
         PlayerData.instance.test_EMJ();
         SetLevelText();
     }
-    private void SetLevelText()
+    public void SetLevelText()
     {
         levelText.SetText(PlayerData.instance.level.ToString());
     }
