@@ -12,4 +12,6 @@ public class MaterialItemData
     public int priceForOrder;
     public float exp;
     public int jewel;
+
+    public string name;
 }

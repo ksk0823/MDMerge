@@ -425,7 +425,8 @@ MonoBehaviour:
   m_text: L
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
-  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
+  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -651,6 +652,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uBE44\uC988"
   - id: 1
     categoryID: 8
     itemImg: {fileID: 21300000, guid: 4cd9b9469f409bb44a75b324e477b272, type: 3}
@@ -658,6 +660,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uBE44\uC9882\uAC1C"
   - id: 2
     categoryID: 8
     itemImg: {fileID: 21300000, guid: 13968e26ab809b84c929b914e0f34fa6, type: 3}
@@ -665,6 +668,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uBE44\uC988\uBC18\uC9C0"
   - id: 3
     categoryID: 8
     itemImg: {fileID: 21300000, guid: 4b94d1d0eba6da24aa9a2f4c51438cae, type: 3}
@@ -672,6 +676,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uBE44\uC988\uADC0\uAC78\uC774"
   - id: 4
     categoryID: 8
     itemImg: {fileID: 21300000, guid: 53181327dae5fb544850c14f446b178f, type: 3}
@@ -679,6 +684,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uBE44\uC988\uD314\uCC0C"
   - id: 5
     categoryID: 8
     itemImg: {fileID: 21300000, guid: 12821cea909edb54ba3abb6e84b0d3a3, type: 3}
@@ -686,6 +692,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uBE44\uC988\uBAA9\uAC78\uC774"
   - id: 6
     categoryID: 8
     itemImg: {fileID: 21300000, guid: ced4a28aba37b544982a8bb50ed36ea5, type: 3}
@@ -693,6 +700,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uBC18\uC9C0"
   canUseLevel: 15
   unlockMoney: 5000
   unlockJewel: 0
@@ -743,8 +751,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1229385603}
+  m_Children: [{fileID: 1229385603}]
   m_Father: {fileID: 540772078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1326,8 +1333,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1275036421}
+  m_Children: [{fileID: 1275036421}]
   m_Father: {fileID: 2093221345}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1674,6 +1680,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uC6D0\uB2E8 \uC870\uAC01"
   - id: 1
     categoryID: 5
     itemImg: {fileID: 21300000, guid: 758cb41f3ec20164fa796ccae1379bcc, type: 3}
@@ -1681,6 +1688,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uB098\uC2DC"
   - id: 2
     categoryID: 5
     itemImg: {fileID: 21300000, guid: 7195ff05175413d4f955c107fd7fb7be, type: 3}
@@ -1688,6 +1696,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uBC18\uD314\uD2F0"
   - id: 3
     categoryID: 5
     itemImg: {fileID: 21300000, guid: 28c7c223f105b0d41a97bd15f99d8389, type: 3}
@@ -1695,6 +1704,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uB9E8\uD22C\uB9E8"
   - id: 4
     categoryID: 5
     itemImg: {fileID: 21300000, guid: 6015f373027f5f647a909b7ffde9a105, type: 3}
@@ -1702,6 +1712,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uD6C4\uB4DC\uD2F0"
   - id: 5
     categoryID: 5
     itemImg: {fileID: 21300000, guid: 4bb590c53ab47ef499130c063b4d877a, type: 3}
@@ -1709,6 +1720,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uBC14\uC2DC\uD2F0\uC790\uCF13"
   canUseLevel: 5
   unlockMoney: 1000
   unlockJewel: 0
@@ -1768,6 +1780,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uC19C\uBB49\uCE58"
   - id: 1
     categoryID: 7
     itemImg: {fileID: 21300000, guid: 8eff54d671d73394a8a425afdfcafc2e, type: 3}
@@ -1775,6 +1788,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uC778\uD615 \uC637"
   - id: 2
     categoryID: 7
     itemImg: {fileID: 21300000, guid: 9da6f3d8f2f6e6b42baa958de0ecc78d, type: 3}
@@ -1782,6 +1796,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uC2A4\uD2B8\uB808\uC2A4 \uBCFC"
   - id: 3
     categoryID: 7
     itemImg: {fileID: 21300000, guid: 673c88707733bea4cb91fd34302d4756, type: 3}
@@ -1789,6 +1804,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "10cm \uC778\uD615"
   - id: 4
     categoryID: 7
     itemImg: {fileID: 21300000, guid: 8f3e94a56e5d2104f808919823781eaa, type: 3}
@@ -1796,6 +1812,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "50cm \uC778\uD615"
   canUseLevel: 10
   unlockMoney: 3000
   unlockJewel: 0
@@ -2035,8 +2052,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1879062904}
+  m_Children: [{fileID: 1879062904}]
   m_Father: {fileID: 504845863}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2209,6 +2225,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uAC74\uC804\uC9C01\uAC1C"
   - id: 1
     categoryID: 0
     itemImg: {fileID: 21300000, guid: ebe58e12fac070c418dea90a56d3b0ed, type: 3}
@@ -2216,6 +2233,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uAC74\uC804\uC9C02\uAC1C"
   - id: 2
     categoryID: 0
     itemImg: {fileID: 21300000, guid: f4d44b0817fb10f4a82cd9917f0a2afc, type: 3}
@@ -2223,6 +2241,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uAC74\uC804\uC9C03\uAC1C"
   - id: 3
     categoryID: 0
     itemImg: {fileID: 21300000, guid: c8c5f5b7faa7a834988dfa80097f7ea6, type: 3}
@@ -2230,6 +2249,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uC804\uAD6C"
   - id: 4
     categoryID: 0
     itemImg: {fileID: 21300000, guid: 4dcb8f923c1da2d45ba0ac28ac183519, type: 3}
@@ -2237,6 +2257,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uC751\uC6D0\uBD09"
   canUseLevel: 0
   unlockMoney: 0
   unlockJewel: 0
@@ -2272,8 +2293,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1936706175}
+  m_Children: [{fileID: 1936706175}]
   m_Father: {fileID: 159147405}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2774,7 +2794,8 @@ MonoBehaviour:
   m_text: Player Profile
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc59e41451a40624c94eb78a13971578, type: 2}
-  m_sharedMaterial: {fileID: -5056706401836057112, guid: dc59e41451a40624c94eb78a13971578, type: 2}
+  m_sharedMaterial: {fileID: -5056706401836057112, guid: dc59e41451a40624c94eb78a13971578,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3176,7 +3197,8 @@ MonoBehaviour:
   m_text: X
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
-  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
+  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3324,7 +3346,8 @@ MonoBehaviour:
   m_text: Energy
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
-  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
+  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4284,7 +4307,8 @@ MonoBehaviour:
   m_text: X
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
-  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
+  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4397,6 +4421,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uCEF5"
   - id: 1
     categoryID: 9
     itemImg: {fileID: 21300000, guid: 90290d9d1879c384eaa27f204990523e, type: 3}
@@ -4404,6 +4429,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uBA38\uADF8\uCEF5"
   - id: 2
     categoryID: 9
     itemImg: {fileID: 21300000, guid: 179caf69a44c2c54aae4305cd587b5a4, type: 3}
@@ -4411,6 +4437,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uBA38\uADF8\uCEF5\uC138\uD2B8"
   canUseLevel: 20
   unlockMoney: 10000
   unlockJewel: 50
@@ -5054,6 +5081,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uBD80\uC9C1\uD3EC \uC6D0\uB2E8"
   - id: 1
     categoryID: 6
     itemImg: {fileID: 21300000, guid: a0f0e2bcd7d09464288a4156e71f9e46, type: 3}
@@ -5061,6 +5089,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uC7A5\uBC14\uAD6C\uB2C8"
   - id: 2
     categoryID: 6
     itemImg: {fileID: 21300000, guid: a6919f907c338f440b45fbd461651a0a, type: 3}
@@ -5068,6 +5097,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uC2A4\uD06C\uB7F0\uCE58"
   - id: 3
     categoryID: 6
     itemImg: {fileID: 21300000, guid: 9ecb81870a07b1043aa75fc2e6445aaa, type: 3}
@@ -5075,6 +5105,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uD30C\uC6B0\uCE58"
   - id: 4
     categoryID: 6
     itemImg: {fileID: 21300000, guid: 65d99d08540d9734db386eaafa51f7e6, type: 3}
@@ -5082,6 +5113,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uBBF8\uB2C8 \uD06C\uB85C\uC2A4\uBC31"
   - id: 5
     categoryID: 6
     itemImg: {fileID: 21300000, guid: c0d015f2578f7bf4ea902c4ec28a4b72, type: 3}
@@ -5089,6 +5121,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uBC31\uD329"
   canUseLevel: 10
   unlockMoney: 3000
   unlockJewel: 0
@@ -6496,7 +6529,8 @@ MonoBehaviour:
   - {fileID: 1836190305}
   - {fileID: 1754260947}
   innerPanelTransform: {fileID: 954852399}
-  itemPrefab: {fileID: 5389604596700818195, guid: 5c63830ac1e424c4e9422a8aad082dec, type: 3}
+  itemPrefab: {fileID: 5389604596700818195, guid: 5c63830ac1e424c4e9422a8aad082dec,
+    type: 3}
 --- !u!1 &980257862
 GameObject:
   m_ObjectHideFlags: 0
@@ -6527,8 +6561,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 867340996}
+  m_Children: [{fileID: 867340996}]
   m_Father: {fileID: 1137546781}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -6915,7 +6948,8 @@ MonoBehaviour:
   m_text: Money
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
-  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
+  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7747,7 +7781,8 @@ MonoBehaviour:
     \uBCF4\uC11D: 50"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc59e41451a40624c94eb78a13971578, type: 2}
-  m_sharedMaterial: {fileID: -5056706401836057112, guid: dc59e41451a40624c94eb78a13971578, type: 2}
+  m_sharedMaterial: {fileID: -5056706401836057112, guid: dc59e41451a40624c94eb78a13971578,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7963,9 +7998,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1232353941}
   - component: {fileID: 1232353943}
-  - component: {fileID: 1232353942}
+  - component: {fileID: 1232353944}
   m_Layer: 5
-  m_Name: InfoPanel
+  m_Name: InfoText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7990,36 +8025,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 64}
   m_SizeDelta: {x: 0, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1232353942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1232353940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.90196085, b: 0.92549026, a: 0.392}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1232353943
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8028,6 +8033,96 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1232353940}
   m_CullTransparentMesh: 1
+--- !u!114 &1232353944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232353940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: dc59e41451a40624c94eb78a13971578, type: 2}
+  m_sharedMaterial: {fileID: -5056706401836057112, guid: dc59e41451a40624c94eb78a13971578,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 30
+  m_fontSizeBase: 30
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 32
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1241298526
 GameObject:
   m_ObjectHideFlags: 0
@@ -8315,6 +8410,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uD544\uB984"
   - id: 1
     categoryID: 1
     itemImg: {fileID: 21300000, guid: 48ac4aba309318e4081814be2ae0d936, type: 3}
@@ -8322,6 +8418,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uD3F4\uB77C\uB85C\uC774\uB4DC"
   - id: 2
     categoryID: 1
     itemImg: {fileID: 21300000, guid: 30afe0a8879aef8429bacd72bc35360d, type: 3}
@@ -8329,6 +8426,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uD2F0\uCF13\uD3EC\uCE74"
   - id: 3
     categoryID: 1
     itemImg: {fileID: 21300000, guid: 891add9a89320914eb027d1723354b6c, type: 3}
@@ -8336,6 +8434,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uC5FD\uC11C\uC138\uD2B8"
   - id: 4
     categoryID: 1
     itemImg: {fileID: 21300000, guid: db5c47c3dd442c349a3dec69ac310b62, type: 3}
@@ -8343,6 +8442,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uD3EC\uC2A4\uD130"
   - id: 5
     categoryID: 1
     itemImg: {fileID: 21300000, guid: 8f60bde7c589a834aa4b7d4e0dade6c1, type: 3}
@@ -8350,6 +8450,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uD3EC\uD1A0\uBD81"
   canUseLevel: 0
   unlockMoney: 0
   unlockJewel: 0
@@ -8693,6 +8794,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uC2E4\uACFC \uCF54\uBC14\uB298"
   - id: 1
     categoryID: 4
     itemImg: {fileID: 21300000, guid: fae7cadeeba05e147a5ad034e25b0ea5, type: 3}
@@ -8700,6 +8802,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uC5B4\uB290\uC815\uB3C4\uD615\uD0DC\uAC00\uC7A1\uD78C \uB728\uAC1C\uC2E4"
   - id: 2
     categoryID: 4
     itemImg: {fileID: 21300000, guid: afc949ad1ced4b241903fa7107411b73, type: 3}
@@ -8707,6 +8810,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uBA38\uD50C\uB7EC"
   - id: 3
     categoryID: 4
     itemImg: {fileID: 21300000, guid: 59d9061a3399012438144b29e74fc450, type: 3}
@@ -8714,6 +8818,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uBE44\uB2C8"
   - id: 4
     categoryID: 4
     itemImg: {fileID: 21300000, guid: bfd1d3e09c6b4d143962cf2f09a5d9b8, type: 3}
@@ -8721,6 +8826,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uCEA1\uBAA8\uC790"
   - id: 5
     categoryID: 4
     itemImg: {fileID: 21300000, guid: 5ea970de4a19eb4458c6e0fed8f03f90, type: 3}
@@ -8728,6 +8834,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uBC84\uD0B7\uD587"
   canUseLevel: 5
   unlockMoney: 1000
   unlockJewel: 0
@@ -8790,7 +8897,8 @@ MonoBehaviour:
     Name: \uC5B4\uCA4C\uAD6C\uC18C\uB144\uB4E4"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc59e41451a40624c94eb78a13971578, type: 2}
-  m_sharedMaterial: {fileID: -5056706401836057112, guid: dc59e41451a40624c94eb78a13971578, type: 2}
+  m_sharedMaterial: {fileID: -5056706401836057112, guid: dc59e41451a40624c94eb78a13971578,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8895,6 +9003,7 @@ GameObject:
   - component: {fileID: 1315547143}
   - component: {fileID: 1315547142}
   - component: {fileID: 1315547141}
+  - component: {fileID: 1315547144}
   m_Layer: 5
   m_Name: SellButton
   m_TagString: Untagged
@@ -8964,7 +9073,11 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1315547142}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls: [{m_Target: {fileID: 1315547144}, m_TargetAssemblyTypeName: 'SellJustOneButton,
+            Assembly-CSharp', m_MethodName: SellJustOne, m_Mode: 1, m_Arguments: {
+            m_ObjectArgument: {fileID: 0}, m_ObjectArgumentAssemblyTypeName: 'UnityEngine.Object,
+              UnityEngine', m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: '',
+            m_BoolArgument: 0}, m_CallState: 2}]
 --- !u!114 &1315547142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9003,6 +9116,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1315547139}
   m_CullTransparentMesh: 1
+--- !u!114 &1315547144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315547139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0383d950809c9d34e98ed979b966923f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nowSelected: {fileID: 0}
 --- !u!1 &1363683840
 GameObject:
   m_ObjectHideFlags: 0
@@ -10375,6 +10501,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uC2A4\uD2F0\uCEE4"
   - id: 1
     categoryID: 2
     itemImg: {fileID: 21300000, guid: f4b17c317ff0b2741aebc2c82c0925d9, type: 3}
@@ -10382,6 +10509,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uD3EC\uD1A0\uCE74\uB4DC"
   - id: 2
     categoryID: 2
     itemImg: {fileID: 21300000, guid: 977e2192888a40c40be1075dc9226e4f, type: 3}
@@ -10389,6 +10517,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uD3EC\uCE74\uD640\uB354"
   - id: 3
     categoryID: 2
     itemImg: {fileID: 21300000, guid: 4e7471d6e800bcd4589ccdbb1f522055, type: 3}
@@ -10396,6 +10525,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uCF5C\uB809\uD2B8\uBD81"
   canUseLevel: 0
   unlockMoney: 0
   unlockJewel: 0
@@ -10630,7 +10760,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 30
   m_Viewport: {fileID: 0}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 0}
@@ -10969,6 +11099,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uBC43\uC9C0"
   - id: 1
     categoryID: 11
     itemImg: {fileID: 21300000, guid: b77dc36d998cb6445be463d1ba72b0f4, type: 3}
@@ -10976,6 +11107,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uAE08\uC18D \uBBF8\uB2C8\uD0A4\uB9C1 "
   - id: 2
     categoryID: 11
     itemImg: {fileID: 21300000, guid: 67e12b8a1768e9c47b7ff00efdf0d3d3, type: 3}
@@ -10983,6 +11115,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uAE30\uBCF8 \uAE08\uC18D \uD0A4\uB9C1\uC138\uD2B8"
   - id: 2
     categoryID: 11
     itemImg: {fileID: 21300000, guid: 9d9630d207a36714c8d1f633230c89ac, type: 3}
@@ -10990,6 +11123,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uD504\uB9AC\uBBF8\uC5C4 \uAE08\uC18D \uD0A4\uB9C1\uC138\uD2B8"
   canUseLevel: 30
   unlockMoney: 20000
   unlockJewel: 100
@@ -11795,6 +11929,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uD50C\uB77C\uC2A4\uD2F1 \uD0A4\uB9C1"
   - id: 1
     categoryID: 10
     itemImg: {fileID: 21300000, guid: 9d1c9e8b3b795ff4da711b72cc645d23, type: 3}
@@ -11802,6 +11937,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uD50C\uB77C\uC2A4\uD2F1 \uD140\uBE14\uB7EC"
   - id: 2
     categoryID: 10
     itemImg: {fileID: 21300000, guid: e6112335263089b42b07ddaeeff82370, type: 3}
@@ -11809,6 +11945,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uC544\uD06C\uB9B4 \uC2A4\uD0E0\uB4DC"
   canUseLevel: 30
   unlockMoney: 20000
   unlockJewel: 100
@@ -12002,7 +12139,8 @@ MonoBehaviour:
   m_text: X
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
-  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
+  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12741,7 +12879,8 @@ MonoBehaviour:
   m_text: Diamond
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
-  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
+  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13159,6 +13298,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uC12C\uC720"
   - id: 1
     categoryID: 3
     itemImg: {fileID: 21300000, guid: 7fdeeda17aeda4d41b6518fa87d7a8f9, type: 3}
@@ -13166,6 +13306,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uBBF8\uB2C8\uBC30\uB108"
   - id: 2
     categoryID: 3
     itemImg: {fileID: 21300000, guid: bb123c76240a0bf479f7cd6cc3d63bc0, type: 3}
@@ -13173,6 +13314,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uC2AC\uB85C\uAC74"
   - id: 3
     categoryID: 3
     itemImg: {fileID: 21300000, guid: d035182fe058bf74b9d5dd4eabb58ead, type: 3}
@@ -13180,6 +13322,7 @@ MonoBehaviour:
     priceForOrder: 0
     exp: 0
     jewel: 0
+    name: "\uD328\uBE0C\uB9AD \uD3EC\uC2A4\uD130"
   canUseLevel: 0
   unlockMoney: 0
   unlockJewel: 0

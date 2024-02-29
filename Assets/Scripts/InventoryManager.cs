@@ -71,5 +71,17 @@ public class InventoryManager : MonoBehaviour
         go.GetComponent<MaterialCtrl>().InitMaterial(generatorsData[categoryId].materialsData[newNumber], newParent);
        
     }
-    
+
+    public GameObject[] Myitems()
+    {
+        List<GameObject> myItems = new List<GameObject>();
+
+        foreach (Slot s in slots)
+        {
+            if (s.item != null)
+                myItems.Add(s.item.gameObject);
+        }
+        if (myItems.Count == 0) return null;
+        else return myItems.ToArray();
+    }
 }
