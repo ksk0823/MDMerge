@@ -7,8 +7,6 @@ public class LockButton : MonoBehaviour
     public GameObject LockPanel;
     public GameObject LockBtn;
 
-    private bool isUnlocked = false; //해금여부
-
     // Start is called before the first frame update
     void Start()
     {
