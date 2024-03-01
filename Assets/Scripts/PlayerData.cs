@@ -28,7 +28,7 @@ public class PlayerData : MonoBehaviour
         jewel = 0;
         playerName = "김사원";
         groupName = "클린소년단";
-        exp = 10;
+        exp = 0;
         orderCnt = 0;
     }
    
