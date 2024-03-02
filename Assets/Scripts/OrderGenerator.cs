@@ -229,31 +229,36 @@ public class GenerateOrder : MonoBehaviour
         List<MaterialItemData> ItemList = new List<MaterialItemData>();
         ItemList.AddRange(Booth.GetComponent<GeneratorItemData>().materialsData);
         ItemList.AddRange(Camera.GetComponent<GeneratorItemData>().materialsData);
+        ItemList.AddRange(Printer1.GetComponent<GeneratorItemData>().materialsData);
+        ItemList.AddRange(Printer2.GetComponent<GeneratorItemData>().materialsData);
 
-        /*
+
         //생성기 해금여부에 따라 아이템리스트에 아이템 추가 //수정필요
-        if (Printer1.GetComponent<GeneratorItemData>().available)
-            ItemList.AddRange(Printer1.GetComponent<GeneratorItemData>().materialsData);
-        if (Printer2.GetComponent<GeneratorItemData>().available)
-            ItemList.AddRange(Printer2.GetComponent<GeneratorItemData>().materialsData);
-        if (Factory1.GetComponent<GeneratorItemData>().available)
+        if (PlayerData.instance.mapUnlocks[1]) //부산해금 -> 공장생성기 아이템 포함
+        {
             ItemList.AddRange(Factory1.GetComponent<GeneratorItemData>().materialsData);
-        if (Factory2.GetComponent<GeneratorItemData>().available)
             ItemList.AddRange(Factory2.GetComponent<GeneratorItemData>().materialsData);
-        if (Sewing1.GetComponent<GeneratorItemData>().available)
+        }
+        if (PlayerData.instance.mapUnlocks[2]) //인천해금 -> 재봉틀 아이템 포함
+        {
             ItemList.AddRange(Sewing1.GetComponent<GeneratorItemData>().materialsData);
-        if (Sewing2.GetComponent<GeneratorItemData>().available)
             ItemList.AddRange(Sewing2.GetComponent<GeneratorItemData>().materialsData);
-        if (Accessory.GetComponent<GeneratorItemData>().available)
+        }
+        if (PlayerData.instance.mapUnlocks[3]) //광주해금 -> 장신구디스플레이 아이템포함
+        {
             ItemList.AddRange(Accessory.GetComponent<GeneratorItemData>().materialsData);
-        if (Pottery.GetComponent<GeneratorItemData>().available)
+        }
+        if (PlayerData.instance.mapUnlocks[4]) //도쿄해금 -> 도자기물레 아이템포함
+        {
             ItemList.AddRange(Pottery.GetComponent<GeneratorItemData>().materialsData);
-        if (Furnace1.GetComponent<GeneratorItemData>().available)
+        }
+        if (PlayerData.instance.mapUnlocks[5]) //상해해금 -> 용광로 아이템포함
+        {
             ItemList.AddRange(Furnace1.GetComponent<GeneratorItemData>().materialsData);
-        if (Furnace2.GetComponent<GeneratorItemData>().available)
             ItemList.AddRange(Furnace2.GetComponent<GeneratorItemData>().materialsData);
-        */
-        
+        }
+
+    
         MaterialItemData[] result = new MaterialItemData[ordernum];
         List<MaterialItemData> seleted = new List<MaterialItemData>();
 
