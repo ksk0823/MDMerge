@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class UnlockButton : MonoBehaviour
 {
+    public int index;
     public int level;
     public int money;
     public int jem;
@@ -18,6 +19,10 @@ public class UnlockButton : MonoBehaviour
     void Start()
     {
         messageText.SetActive(false);
+        if (PlayerData.instance.mapUnlocks[index])
+        {
+            unlockText.SetText("해금완료");
+        }
     }
 
     // Update is called once per frame
@@ -26,7 +31,7 @@ public class UnlockButton : MonoBehaviour
         
     }
 
-    public void UnlockLocation()
+    public void UnlockLocation(int index)
     {
         if (unlockText.text == "해금완료") return;
         else if (PlayerData.instance.level < level)
@@ -52,6 +57,7 @@ public class UnlockButton : MonoBehaviour
             //    lockButton.GetComponent<Image>().sprite = starSprite;
             //lockButton.GetComponent<Image>().sprite = Resources.Load<Sprite>("Scenes/SpriteGYB/128/# star");
             lockButton.GetComponent<Image>().sprite = star;
+            PlayerData.instance.mapUnlocks[index] = true;
             return;
         }
     }

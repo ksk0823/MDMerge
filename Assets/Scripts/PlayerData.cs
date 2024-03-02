@@ -53,5 +53,6 @@ public class PlayerData : MonoBehaviour
     public int lockNum;
     public bool isFirstPlay = true; // 첫 플레이 여부
     public bool[] generators; //생성기 해금 여부
-    public List<MaterialItemData> inventory;
+    public bool[] mapUnlocks; // 맵 해금 여부
+    public List<MaterialItemData> inventory; //플레이 보드 내용 저장
 }

@@ -11,6 +11,8 @@ TagManager:
   - accessoryButton
   - potteryButton
   - furnaceButton
+  - mapLockButton
+  - mapLockText
   layers:
   - Default
   - TransparentFX

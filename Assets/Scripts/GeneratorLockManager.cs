@@ -39,6 +39,48 @@ public class GeneratorLockManager : MonoBehaviour
         {
             if (generator.id == unlockID)
             {
+                if (unlockID == 4)
+                {
+                    if (!PlayerData.instance.mapUnlocks[1])
+                    {
+                        unlockText.SetText("부산 콘서트 개최가 필요합니다.");
+                        return;
+                    }
+                }
+                if (unlockID == 6)
+                {
+                    if (!PlayerData.instance.mapUnlocks[2])
+                    {
+                        unlockText.SetText("인천 콘서트 개최가 필요합니다.");
+                        return;
+                    }
+                }
+                if (unlockID == 8)
+                {
+                    if (!PlayerData.instance.mapUnlocks[3])
+                    {
+                        unlockText.SetText("광주 콘서트 개최가 필요합니다.");
+                        return;
+                    }
+                }
+                if (unlockID == 9)
+                {
+                    if (!PlayerData.instance.mapUnlocks[4])
+                    {
+                        unlockText.SetText("도쿄 콘서트 개최가 필요합니다.");
+                        return;
+                    }
+                }
+                if (unlockID == 10)
+                {
+                    if (!PlayerData.instance.mapUnlocks[5])
+                    {
+                        unlockText.SetText("상해 콘서트 개최가 필요합니다.");
+                        return;
+                    }
+                }
+
+
                 int tempLevel = generator.canUseLevel;
                 int tempMoney = generator.unlockMoney;
                 int tempJewel = generator.unlockJewel;
@@ -67,7 +109,7 @@ public class GeneratorLockManager : MonoBehaviour
                 }
                 else 
                 {
-                    // 돈 부족 팝업
+                    unlockText.SetText("생성기 구매 재화가 부족합니다.\n재정을 확인해주세요.");
                 }
             }
         }

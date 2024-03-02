@@ -50,7 +50,6 @@ public class InventoryManager : MonoBehaviour
 
     public void saveInventory() 
     {
-
         foreach (Slot slot in slots)
         {
             if (!(slot.item == null))
