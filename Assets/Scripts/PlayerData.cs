@@ -55,4 +55,5 @@ public class PlayerData : MonoBehaviour
     public bool[] generators; //생성기 해금 여부
     public bool[] mapUnlocks; // 맵 해금 여부
     public List<MaterialItemData> inventory; //플레이 보드 내용 저장
+    public List<OrderObject> orderInventory; //주문 내용 저장
 }

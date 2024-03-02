@@ -4,9 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEditor;
 using TMPro;
+using System.Linq;
+using System.Diagnostics;
+using Unity.VisualScripting;
 
 public class GenerateOrder : MonoBehaviour
 {
+    public static GenerateOrder Instance;
     //public PlayerData playerData;
     public GameObject prefab;
     public int maxOrderCount = 10;
@@ -47,20 +51,107 @@ public class GenerateOrder : MonoBehaviour
         Pottery = GameObject.Find("PotteryData");
         Furnace1 = GameObject.Find("FurnaceData1");
         Furnace2 = GameObject.Find("FurnaceData2");
-
-
+        
+        //loadOrderInventory();
+        Instance = this;
     }
 
     // Update is called once per frame
  
     void Update()
     {
+        
         if (!hasInvoked && myCoroutine == null)
         {
             hasInvoked = true;
             Invoke("StartMyCoroutine", 5f); // 5초 후에 StartMyCoroutine 함수를 호출
         }
     }
+
+    /*
+    void loadOrderInventory() 
+    {
+        if (PlayerData.instance.orderInventory == null)
+        {
+            // 첫 플레이 시
+            PlayerData.instance.orderInventory = new List<OrderObject>();
+        }
+        else 
+        {
+            foreach (OrderObject order in PlayerData.instance.orderInventory)
+            {
+                GameObject newPrefab = Instantiate(prefab, transform.position, Quaternion.identity);
+                newPrefab.SetActive(false);
+                newPrefab.GetComponent<OrderObject>().orderObject = order.orderObject;
+                newPrefab.GetComponent<OrderObject>().priceText = order.priceText;
+                newPrefab.GetComponent<OrderObject>().expText = order.expText;
+                newPrefab.GetComponent<OrderObject>().orderId = order.orderId;
+                newPrefab.GetComponent<OrderObject>().orderItemNum = order.orderItemNum;
+                newPrefab.GetComponent<OrderObject>().orderItems = order.orderItems;
+                newPrefab.GetComponent<OrderObject>().orderPrice = order.orderPrice;
+                newPrefab.GetComponent<OrderObject>().orderExp = order.orderExp;
+                newPrefab.GetComponent<OrderObject>().orderJem = order.orderJem;
+
+                newPrefab.transform.SetParent(contentPanel.transform);
+
+                newPrefab.transform.Find("OrderSlot").GetComponent<Image>().sprite = orderSprites[order.orderItemNum - 1];
+                for (int i = 0; i < order.orderItemNum; i++)
+                {
+                    newPrefab.transform.Find("OrderSlot").Find("itemImage" + i.ToString()).GetComponent<Image>().sprite
+                    = newPrefab.GetComponent<OrderObject>().orderItems[i].itemImg;
+                }
+                newPrefab.transform.Find("OrderSlot").Find("priceText").GetComponent<TMP_Text>().SetText(order.orderPrice.ToString());
+                newPrefab.transform.Find("OrderSlot").Find("expText").GetComponent<TMP_Text>().SetText(order.orderExp.ToString());
+                newPrefab.SetActive(true);
+            }
+        }
+    }
+
+    public void saveOrderInventory()
+    {
+        if (contentPanel.transform.childCount > 0)
+        {
+            OrderObject[] orderGOs = contentPanel.GetComponentsInChildren<OrderObject>();
+            foreach (OrderObject order in orderGOs)
+            {
+                OrderObject orderP = new OrderObject();
+
+                orderP.orderObject = order.orderObject;
+                orderP.priceText = order.priceText;
+                orderP.expText = order.expText;
+                orderP.orderId = order.orderId;
+                orderP.orderItemNum = order.orderItemNum;
+
+                List<MaterialItemData> tempList = new List<MaterialItemData>();
+                foreach (MaterialItemData mit in order.orderItems)
+                {
+                    MaterialItemData tempItem = new MaterialItemData();
+                    tempItem.id = mit.id;
+                    tempItem.categoryID = mit.categoryID;
+                    tempItem.itemImg = mit.itemImg;
+                    tempItem.priceForOrder = mit.priceForOrder;
+                    tempItem.priceForPlayer = mit.priceForPlayer;
+                    tempItem.exp = mit.exp;
+                    tempItem.jewel = mit.jewel;
+                    tempList.Add(tempItem);
+                }
+                orderP.orderItems = tempList.ToArray();
+
+                orderP.orderPrice = order.orderPrice;
+                orderP.orderExp = order.orderExp;
+                orderP.orderJem = order.orderJem;
+
+                PlayerData.instance.orderInventory.Add(order);
+            }
+            //PlayerData.instance.orderInventory = orderGOs.ToListPooled();
+        }
+        else
+        {
+            return;
+        }
+
+    }
+    */
 
     void StartMyCoroutine()
     {
@@ -127,7 +218,7 @@ public class GenerateOrder : MonoBehaviour
             yield return new WaitForSeconds(3f); // 3초 동안 대기
         }
 
-        Debug.LogWarning("Prefab의 한계 수를 초과하여 더 이상 생성할 수 없습니다.");
+        //Debug.LogWarning("Prefab의 한계 수를 초과하여 더 이상 생성할 수 없습니다.");
 
         myCoroutine = null;
     }
