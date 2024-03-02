@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class SettingButton : MonoBehaviour
 {
     public GameObject SettingPanel;
+    public GameObject waitUpdatePanel;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,12 @@ public class SettingButton : MonoBehaviour
     }
 
     public void soundButton() {
+        waitUpdatePanel.SetActive(true);
+    }
 
+    public void quitSoundButton()
+    {
+        waitUpdatePanel.SetActive(false);
     }
 
     public void quitSettingMenu() {

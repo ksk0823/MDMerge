@@ -25,6 +25,7 @@ public class PlayerData : MonoBehaviour
         else
         {
             instance = this;
+            test_EMJ();
             DontDestroyOnLoad(gameObject);
         }
     }
@@ -32,8 +33,8 @@ public class PlayerData : MonoBehaviour
     public void test_EMJ()
     {
         level = 1;
-        energy = 0;
-        money = 0;
+        energy = 100;
+        money = 100;
         jewel = 0;
         playerName = "김사원";
         groupName = "클린소년단";

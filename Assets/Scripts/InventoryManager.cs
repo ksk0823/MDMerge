@@ -88,6 +88,12 @@ public class InventoryManager : MonoBehaviour
 
         if (emptySlots != null)
         {
+            if (PlayerData.instance.energy <= 0)
+            {
+                return;
+            }
+            else { PlayerData.instance.energy--; }
+
             int randomNum = Random.Range(0, emptySlots.Length);
             
             GameObject go = Instantiate(itemPrefab, emptySlots[randomNum].transform.position, Quaternion.identity);
@@ -101,8 +107,16 @@ public class InventoryManager : MonoBehaviour
 
         int randomCategoryID = Random.Range(categoryID, categoryID+2);
 
+
+
         if (emptySlots != null)
         {
+            if (PlayerData.instance.energy <= 0)
+            {
+                return;
+            }
+            else { PlayerData.instance.energy--; }
+
             int randomNum = Random.Range(0, emptySlots.Length);
 
             GameObject go = Instantiate(itemPrefab, emptySlots[randomNum].transform.position, Quaternion.identity);

@@ -11,11 +11,6 @@ public class EnergyUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerData.instance.isFirstPlay)
-        {
-            PlayerData.instance.test_EMJ();
-            PlayerData.instance.isFirstPlay = false;
-        }
         energyText = GetComponent<TextMeshProUGUI>();
         SetEnergyText();
     }

@@ -5,6 +5,8 @@ using UnityEngine;
 public class PowerButton : MonoBehaviour
 {
     public GameObject PowerPanel;
+    public GameObject WaitPanel;
+    public GameObject QuitPanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,12 +26,17 @@ public class PowerButton : MonoBehaviour
 
     public void saveButton()
     {
-
+        WaitPanel.SetActive(true);
     }
 
     public void quitButton()
     {
+        QuitPanel.SetActive(true);
+    }
 
+    public void quitGame()
+    {
+        Application.Quit();
     }
 
     public void quitPowerMenu()

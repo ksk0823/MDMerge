@@ -19,6 +19,7 @@ public class PlayButton : MonoBehaviour
 
     public void toMergeMode()
     {
+        PlayerData.instance.orderCnt = 0;
         SceneManager.LoadScene("MergeMode", LoadSceneMode.Single);
     }
 }

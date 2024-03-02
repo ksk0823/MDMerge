@@ -9,11 +9,18 @@ using UnityEngine.UI;
 public class MapUpdater : MonoBehaviour
 {
     GameObject[] lockButtons;
+    public GameObject firstCanvas;
     
     public Sprite star;
+
     // Start is called before the first frame update
     void Start()
     {
+        if (!PlayerData.instance.isFirstPlay)
+        {
+            Destroy(firstCanvas);
+        } 
+
         lockButtons = GameObject.FindGameObjectsWithTag("mapLockButton");
 
         List<GameObject> buttonsList = lockButtons.ToListPooled();
