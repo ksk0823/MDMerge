@@ -427,8 +427,7 @@ MonoBehaviour:
   m_text: L
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
-  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd,
-    type: 2}
+  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -651,64 +650,64 @@ MonoBehaviour:
   - id: 0
     categoryID: 8
     itemImg: {fileID: 21300000, guid: 08e40bf394056cb4091f8bf25f8bda8e, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
+    priceForPlayer: 4
+    priceForOrder: 12
+    exp: 4
     jewel: 0
     slotNumForPlayer: 0
     name: "\uBE44\uC988"
   - id: 1
     categoryID: 8
     itemImg: {fileID: 21300000, guid: 4cd9b9469f409bb44a75b324e477b272, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
+    priceForPlayer: 10
+    priceForOrder: 27
+    exp: 8
     jewel: 0
     slotNumForPlayer: 0
     name: "\uBE44\uC9882\uAC1C"
   - id: 2
     categoryID: 8
     itemImg: {fileID: 21300000, guid: 13968e26ab809b84c929b914e0f34fa6, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 23
+    priceForOrder: 58
+    exp: 15
+    jewel: 1
     slotNumForPlayer: 0
     name: "\uBE44\uC988\uBC18\uC9C0"
   - id: 3
     categoryID: 8
     itemImg: {fileID: 21300000, guid: 4b94d1d0eba6da24aa9a2f4c51438cae, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 50
+    priceForOrder: 130
+    exp: 24
+    jewel: 2
     slotNumForPlayer: 0
     name: "\uBE44\uC988\uADC0\uAC78\uC774"
   - id: 4
     categoryID: 8
     itemImg: {fileID: 21300000, guid: 53181327dae5fb544850c14f446b178f, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 110
+    priceForOrder: 275
+    exp: 34
+    jewel: 3
     slotNumForPlayer: 0
     name: "\uBE44\uC988\uD314\uCC0C"
   - id: 5
     categoryID: 8
     itemImg: {fileID: 21300000, guid: 12821cea909edb54ba3abb6e84b0d3a3, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 235
+    priceForOrder: 560
+    exp: 45
+    jewel: 5
     slotNumForPlayer: 0
     name: "\uBE44\uC988\uBAA9\uAC78\uC774"
   - id: 6
     categoryID: 8
     itemImg: {fileID: 21300000, guid: ced4a28aba37b544982a8bb50ed36ea5, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 490
+    priceForOrder: 1150
+    exp: 57
+    jewel: 7
     slotNumForPlayer: 0
     name: "\uBC18\uC9C0"
   canUseLevel: 15
@@ -761,7 +760,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: [{fileID: 1229385603}]
+  m_Children:
+  - {fileID: 1229385603}
   m_Father: {fileID: 540772078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1346,7 +1346,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: [{fileID: 1275036421}]
+  m_Children:
+  - {fileID: 1275036421}
   m_Father: {fileID: 2093221345}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1690,55 +1691,55 @@ MonoBehaviour:
   - id: 0
     categoryID: 5
     itemImg: {fileID: 21300000, guid: 593deb8d8b6bd1d41ad0be5ee6037f85, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
+    priceForPlayer: 2
+    priceForOrder: 10
+    exp: 2
     jewel: 0
     slotNumForPlayer: 0
     name: "\uC6D0\uB2E8 \uC870\uAC01"
   - id: 1
     categoryID: 5
     itemImg: {fileID: 21300000, guid: 758cb41f3ec20164fa796ccae1379bcc, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 5
+    priceForOrder: 35
+    exp: 5
+    jewel: 1
     slotNumForPlayer: 0
     name: "\uB098\uC2DC"
   - id: 2
     categoryID: 5
     itemImg: {fileID: 21300000, guid: 7195ff05175413d4f955c107fd7fb7be, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 13
+    priceForOrder: 55
+    exp: 8
+    jewel: 1
     slotNumForPlayer: 0
     name: "\uBC18\uD314\uD2F0"
   - id: 3
     categoryID: 5
     itemImg: {fileID: 21300000, guid: 28c7c223f105b0d41a97bd15f99d8389, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 30
+    priceForOrder: 120
+    exp: 14
+    jewel: 2
     slotNumForPlayer: 0
     name: "\uB9E8\uD22C\uB9E8"
   - id: 4
     categoryID: 5
     itemImg: {fileID: 21300000, guid: 6015f373027f5f647a909b7ffde9a105, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 65
+    priceForOrder: 250
+    exp: 25
+    jewel: 3
     slotNumForPlayer: 0
     name: "\uD6C4\uB4DC\uD2F0"
   - id: 5
     categoryID: 5
     itemImg: {fileID: 21300000, guid: 4bb590c53ab47ef499130c063b4d877a, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 130
+    priceForOrder: 320
+    exp: 35
+    jewel: 5
     slotNumForPlayer: 0
     name: "\uBC14\uC2DC\uD2F0\uC790\uCF13"
   canUseLevel: 5
@@ -1796,46 +1797,46 @@ MonoBehaviour:
   - id: 0
     categoryID: 7
     itemImg: {fileID: 21300000, guid: 50f3f2f5c817ac94ea2d6a962a243a97, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
+    priceForPlayer: 3
+    priceForOrder: 10
+    exp: 3
     jewel: 0
     slotNumForPlayer: 0
     name: "\uC19C\uBB49\uCE58"
   - id: 1
     categoryID: 7
     itemImg: {fileID: 21300000, guid: 8eff54d671d73394a8a425afdfcafc2e, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 7
+    priceForOrder: 30
+    exp: 6
+    jewel: 1
     slotNumForPlayer: 0
     name: "\uC778\uD615 \uC637"
   - id: 2
     categoryID: 7
     itemImg: {fileID: 21300000, guid: 9da6f3d8f2f6e6b42baa958de0ecc78d, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 15
+    priceForOrder: 50
+    exp: 12
+    jewel: 2
     slotNumForPlayer: 0
     name: "\uC2A4\uD2B8\uB808\uC2A4 \uBCFC"
   - id: 3
     categoryID: 7
     itemImg: {fileID: 21300000, guid: 673c88707733bea4cb91fd34302d4756, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 32
+    priceForOrder: 100
+    exp: 17
+    jewel: 3
     slotNumForPlayer: 0
     name: "10cm \uC778\uD615"
   - id: 4
     categoryID: 7
     itemImg: {fileID: 21300000, guid: 8f3e94a56e5d2104f808919823781eaa, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 70
+    priceForOrder: 240
+    exp: 28
+    jewel: 5
     slotNumForPlayer: 0
     name: "50cm \uC778\uD615"
   canUseLevel: 10
@@ -2078,7 +2079,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: [{fileID: 1879062904}]
+  m_Children:
+  - {fileID: 1879062904}
   m_Father: {fileID: 504845863}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2242,7 +2244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  available: 1
+  available: 0
   materialsData:
   - id: 0
     categoryID: 0
@@ -2251,6 +2253,7 @@ MonoBehaviour:
     priceForOrder: 5
     exp: 1
     jewel: 0
+    slotNumForPlayer: 0
     name: "\uAC74\uC804\uC9C01\uAC1C"
   - id: 1
     categoryID: 0
@@ -2259,6 +2262,7 @@ MonoBehaviour:
     priceForOrder: 10
     exp: 2
     jewel: 0
+    slotNumForPlayer: 0
     name: "\uAC74\uC804\uC9C02\uAC1C"
   - id: 2
     categoryID: 0
@@ -2267,6 +2271,7 @@ MonoBehaviour:
     priceForOrder: 30
     exp: 4
     jewel: 1
+    slotNumForPlayer: 0
     name: "\uAC74\uC804\uC9C03\uAC1C"
   - id: 3
     categoryID: 0
@@ -2275,6 +2280,7 @@ MonoBehaviour:
     priceForOrder: 50
     exp: 7
     jewel: 2
+    slotNumForPlayer: 0
     name: "\uC804\uAD6C"
   - id: 4
     categoryID: 0
@@ -2283,50 +2289,6 @@ MonoBehaviour:
     priceForOrder: 100
     exp: 10
     jewel: 3
-    name: "\uC751\uC6D0\uBD09"
-  - id: 0
-    categoryID: 0
-    itemImg: {fileID: 21300000, guid: 71a0de7c9bb7c46428791ea2219bcf1c, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
-    slotNumForPlayer: 0
-    name: "\uAC74\uC804\uC9C01\uAC1C"
-  - id: 1
-    categoryID: 0
-    itemImg: {fileID: 21300000, guid: ebe58e12fac070c418dea90a56d3b0ed, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
-    slotNumForPlayer: 0
-    name: "\uAC74\uC804\uC9C02\uAC1C"
-  - id: 2
-    categoryID: 0
-    itemImg: {fileID: 21300000, guid: f4d44b0817fb10f4a82cd9917f0a2afc, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
-    slotNumForPlayer: 0
-    name: "\uAC74\uC804\uC9C03\uAC1C"
-  - id: 3
-    categoryID: 0
-    itemImg: {fileID: 21300000, guid: c8c5f5b7faa7a834988dfa80097f7ea6, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
-    slotNumForPlayer: 0
-    name: "\uC804\uAD6C"
-  - id: 4
-    categoryID: 0
-    itemImg: {fileID: 21300000, guid: 4dcb8f923c1da2d45ba0ac28ac183519, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
     slotNumForPlayer: 0
     name: "\uC751\uC6D0\uBD09"
   canUseLevel: 0
@@ -2364,7 +2326,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: [{fileID: 1936706175}]
+  m_Children:
+  - {fileID: 1936706175}
   m_Father: {fileID: 159147405}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2868,8 +2831,7 @@ MonoBehaviour:
   m_text: Player Profile
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc59e41451a40624c94eb78a13971578, type: 2}
-  m_sharedMaterial: {fileID: -5056706401836057112, guid: dc59e41451a40624c94eb78a13971578,
-    type: 2}
+  m_sharedMaterial: {fileID: -5056706401836057112, guid: dc59e41451a40624c94eb78a13971578, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3271,8 +3233,7 @@ MonoBehaviour:
   m_text: X
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
-  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd,
-    type: 2}
+  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3420,8 +3381,7 @@ MonoBehaviour:
   m_text: Energy
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
-  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd,
-    type: 2}
+  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4384,8 +4344,7 @@ MonoBehaviour:
   m_text: X
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
-  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd,
-    type: 2}
+  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4494,28 +4453,28 @@ MonoBehaviour:
   - id: 0
     categoryID: 9
     itemImg: {fileID: 21300000, guid: 5e811a6cbdd223241b57ddf19d174c5e, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 70
+    priceForOrder: 350
+    exp: 35
+    jewel: 7
     slotNumForPlayer: 0
     name: "\uCEF5"
   - id: 1
     categoryID: 9
     itemImg: {fileID: 21300000, guid: 90290d9d1879c384eaa27f204990523e, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 150
+    priceForOrder: 500
+    exp: 45
+    jewel: 9
     slotNumForPlayer: 0
     name: "\uBA38\uADF8\uCEF5"
   - id: 2
     categoryID: 9
     itemImg: {fileID: 21300000, guid: 179caf69a44c2c54aae4305cd587b5a4, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 320
+    priceForOrder: 750
+    exp: 60
+    jewel: 13
     slotNumForPlayer: 0
     name: "\uBA38\uADF8\uCEF5\uC138\uD2B8"
   canUseLevel: 20
@@ -5161,55 +5120,55 @@ MonoBehaviour:
   - id: 0
     categoryID: 6
     itemImg: {fileID: 21300000, guid: f73a688c6341fc9448eaa4de72a5dfee, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
+    priceForPlayer: 3
+    priceForOrder: 10
+    exp: 3
     jewel: 0
     slotNumForPlayer: 0
     name: "\uBD80\uC9C1\uD3EC \uC6D0\uB2E8"
   - id: 1
     categoryID: 6
     itemImg: {fileID: 21300000, guid: a0f0e2bcd7d09464288a4156e71f9e46, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 7
+    priceForOrder: 30
+    exp: 6
+    jewel: 1
     slotNumForPlayer: 0
     name: "\uC7A5\uBC14\uAD6C\uB2C8"
   - id: 2
     categoryID: 6
     itemImg: {fileID: 21300000, guid: a6919f907c338f440b45fbd461651a0a, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 15
+    priceForOrder: 50
+    exp: 12
+    jewel: 2
     slotNumForPlayer: 0
     name: "\uC2A4\uD06C\uB7F0\uCE58"
   - id: 3
     categoryID: 6
     itemImg: {fileID: 21300000, guid: 9ecb81870a07b1043aa75fc2e6445aaa, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 32
+    priceForOrder: 100
+    exp: 17
+    jewel: 3
     slotNumForPlayer: 0
     name: "\uD30C\uC6B0\uCE58"
   - id: 4
     categoryID: 6
     itemImg: {fileID: 21300000, guid: 65d99d08540d9734db386eaafa51f7e6, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 70
+    priceForOrder: 240
+    exp: 28
+    jewel: 5
     slotNumForPlayer: 0
     name: "\uBBF8\uB2C8 \uD06C\uB85C\uC2A4\uBC31"
   - id: 5
     categoryID: 6
     itemImg: {fileID: 21300000, guid: c0d015f2578f7bf4ea902c4ec28a4b72, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 150
+    priceForOrder: 500
+    exp: 40
+    jewel: 7
     slotNumForPlayer: 0
     name: "\uBC31\uD329"
   canUseLevel: 10
@@ -6625,8 +6584,7 @@ MonoBehaviour:
   - {fileID: 1836190305}
   - {fileID: 1754260947}
   innerPanelTransform: {fileID: 954852399}
-  itemPrefab: {fileID: 5389604596700818195, guid: 5c63830ac1e424c4e9422a8aad082dec,
-    type: 3}
+  itemPrefab: {fileID: 5389604596700818195, guid: 5c63830ac1e424c4e9422a8aad082dec, type: 3}
 --- !u!1 &980257862
 GameObject:
   m_ObjectHideFlags: 0
@@ -6657,7 +6615,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: [{fileID: 867340996}]
+  m_Children:
+  - {fileID: 867340996}
   m_Father: {fileID: 1137546781}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -7044,8 +7003,7 @@ MonoBehaviour:
   m_text: Money
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
-  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd,
-    type: 2}
+  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7879,8 +7837,7 @@ MonoBehaviour:
     \uBCF4\uC11D: 50"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc59e41451a40624c94eb78a13971578, type: 2}
-  m_sharedMaterial: {fileID: -5056706401836057112, guid: dc59e41451a40624c94eb78a13971578,
-    type: 2}
+  m_sharedMaterial: {fileID: -5056706401836057112, guid: dc59e41451a40624c94eb78a13971578, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8154,8 +8111,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc59e41451a40624c94eb78a13971578, type: 2}
-  m_sharedMaterial: {fileID: -5056706401836057112, guid: dc59e41451a40624c94eb78a13971578,
-    type: 2}
+  m_sharedMaterial: {fileID: -5056706401836057112, guid: dc59e41451a40624c94eb78a13971578, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8508,6 +8464,7 @@ MonoBehaviour:
     priceForOrder: 5
     exp: 1
     jewel: 0
+    slotNumForPlayer: 0
     name: "\uD544\uB984"
   - id: 1
     categoryID: 1
@@ -8516,6 +8473,7 @@ MonoBehaviour:
     priceForOrder: 10
     exp: 2
     jewel: 0
+    slotNumForPlayer: 0
     name: "\uD3F4\uB77C\uB85C\uC774\uB4DC"
   - id: 2
     categoryID: 1
@@ -8524,6 +8482,7 @@ MonoBehaviour:
     priceForOrder: 30
     exp: 4
     jewel: 1
+    slotNumForPlayer: 0
     name: "\uD2F0\uCF13\uD3EC\uCE74"
   - id: 3
     categoryID: 1
@@ -8532,75 +8491,24 @@ MonoBehaviour:
     priceForOrder: 50
     exp: 7
     jewel: 2
+    slotNumForPlayer: 0
     name: "\uC5FD\uC11C\uC138\uD2B8"
   - id: 4
     categoryID: 1
     itemImg: {fileID: 21300000, guid: db5c47c3dd442c349a3dec69ac310b62, type: 3}
-    priceForPlayer: 40
+    priceForPlayer: 32
     priceForOrder: 100
     exp: 10
     jewel: 3
+    slotNumForPlayer: 0
     name: "\uD3EC\uC2A4\uD130"
   - id: 5
     categoryID: 1
     itemImg: {fileID: 21300000, guid: 8f60bde7c589a834aa4b7d4e0dade6c1, type: 3}
-    priceForPlayer: 100
+    priceForPlayer: 70
     priceForOrder: 240
-    exp: 15
+    exp: 12
     jewel: 5
-    name: "\uD3EC\uD1A0\uBD81"
-  - id: 0
-    categoryID: 1
-    itemImg: {fileID: 21300000, guid: 154c74c2a0bed264f81926c3366b5fe6, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
-    slotNumForPlayer: 0
-    name: "\uD544\uB984"
-  - id: 1
-    categoryID: 1
-    itemImg: {fileID: 21300000, guid: 48ac4aba309318e4081814be2ae0d936, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
-    slotNumForPlayer: 0
-    name: "\uD3F4\uB77C\uB85C\uC774\uB4DC"
-  - id: 2
-    categoryID: 1
-    itemImg: {fileID: 21300000, guid: 30afe0a8879aef8429bacd72bc35360d, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
-    slotNumForPlayer: 0
-    name: "\uD2F0\uCF13\uD3EC\uCE74"
-  - id: 3
-    categoryID: 1
-    itemImg: {fileID: 21300000, guid: 891add9a89320914eb027d1723354b6c, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
-    slotNumForPlayer: 0
-    name: "\uC5FD\uC11C\uC138\uD2B8"
-  - id: 4
-    categoryID: 1
-    itemImg: {fileID: 21300000, guid: db5c47c3dd442c349a3dec69ac310b62, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
-    slotNumForPlayer: 0
-    name: "\uD3EC\uC2A4\uD130"
-  - id: 5
-    categoryID: 1
-    itemImg: {fileID: 21300000, guid: 8f60bde7c589a834aa4b7d4e0dade6c1, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
     slotNumForPlayer: 0
     name: "\uD3EC\uD1A0\uBD81"
   canUseLevel: 0
@@ -8895,6 +8803,7 @@ MonoBehaviour:
   lockNum: 0
   isFirstPlay: 1
   generators: 
+  mapUnlocks: 
   inventory: []
 --- !u!4 &1306913734
 Transform:
@@ -8946,55 +8855,55 @@ MonoBehaviour:
   - id: 0
     categoryID: 4
     itemImg: {fileID: 21300000, guid: 6387fa40b7f00e74da0db59204d44bdb, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
+    priceForPlayer: 2
+    priceForOrder: 10
+    exp: 2
     jewel: 0
     slotNumForPlayer: 0
     name: "\uC2E4\uACFC \uCF54\uBC14\uB298"
   - id: 1
     categoryID: 4
     itemImg: {fileID: 21300000, guid: fae7cadeeba05e147a5ad034e25b0ea5, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 5
+    priceForOrder: 35
+    exp: 5
+    jewel: 1
     slotNumForPlayer: 0
     name: "\uC5B4\uB290\uC815\uB3C4\uD615\uD0DC\uAC00\uC7A1\uD78C \uB728\uAC1C\uC2E4"
   - id: 2
     categoryID: 4
     itemImg: {fileID: 21300000, guid: afc949ad1ced4b241903fa7107411b73, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 13
+    priceForOrder: 55
+    exp: 8
+    jewel: 1
     slotNumForPlayer: 0
     name: "\uBA38\uD50C\uB7EC"
   - id: 3
     categoryID: 4
     itemImg: {fileID: 21300000, guid: 59d9061a3399012438144b29e74fc450, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 30
+    priceForOrder: 120
+    exp: 14
+    jewel: 1
     slotNumForPlayer: 0
     name: "\uBE44\uB2C8"
   - id: 4
     categoryID: 4
     itemImg: {fileID: 21300000, guid: bfd1d3e09c6b4d143962cf2f09a5d9b8, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 65
+    priceForOrder: 250
+    exp: 25
+    jewel: 3
     slotNumForPlayer: 0
     name: "\uCEA1\uBAA8\uC790"
   - id: 5
     categoryID: 4
     itemImg: {fileID: 21300000, guid: 5ea970de4a19eb4458c6e0fed8f03f90, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 130
+    priceForOrder: 320
+    exp: 35
+    jewel: 5
     slotNumForPlayer: 0
     name: "\uBC84\uD0B7\uD587"
   canUseLevel: 5
@@ -9059,8 +8968,7 @@ MonoBehaviour:
     Name: \uC5B4\uCA4C\uAD6C\uC18C\uB144\uB4E4"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc59e41451a40624c94eb78a13971578, type: 2}
-  m_sharedMaterial: {fileID: -5056706401836057112, guid: dc59e41451a40624c94eb78a13971578,
-    type: 2}
+  m_sharedMaterial: {fileID: -5056706401836057112, guid: dc59e41451a40624c94eb78a13971578, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9235,11 +9143,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1315547142}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: [{m_Target: {fileID: 1315547144}, m_TargetAssemblyTypeName: 'SellJustOneButton,
-            Assembly-CSharp', m_MethodName: SellJustOne, m_Mode: 1, m_Arguments: {
-            m_ObjectArgument: {fileID: 0}, m_ObjectArgumentAssemblyTypeName: 'UnityEngine.Object,
-              UnityEngine', m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: '',
-            m_BoolArgument: 0}, m_CallState: 2}]
+      m_Calls:
+      - m_Target: {fileID: 1315547144}
+        m_TargetAssemblyTypeName: SellJustOneButton, Assembly-CSharp
+        m_MethodName: SellJustOne
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1315547142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10670,6 +10586,7 @@ MonoBehaviour:
     priceForOrder: 5
     exp: 1
     jewel: 0
+    slotNumForPlayer: 0
     name: "\uC2A4\uD2F0\uCEE4"
   - id: 1
     categoryID: 2
@@ -10678,6 +10595,7 @@ MonoBehaviour:
     priceForOrder: 10
     exp: 2
     jewel: 1
+    slotNumForPlayer: 0
     name: "\uD3EC\uD1A0\uCE74\uB4DC"
   - id: 2
     categoryID: 2
@@ -10686,49 +10604,15 @@ MonoBehaviour:
     priceForOrder: 30
     exp: 5
     jewel: 1
+    slotNumForPlayer: 0
     name: "\uD3EC\uCE74\uD640\uB354"
   - id: 3
     categoryID: 2
     itemImg: {fileID: 21300000, guid: 4e7471d6e800bcd4589ccdbb1f522055, type: 3}
     priceForPlayer: 15
     priceForOrder: 50
-    exp: 10
+    exp: 8
     jewel: 3
-    name: "\uCF5C\uB809\uD2B8\uBD81"
-  - id: 0
-    categoryID: 2
-    itemImg: {fileID: 21300000, guid: 03a63e0643ce34b41b38df8ac4ad2785, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
-    slotNumForPlayer: 0
-    name: "\uC2A4\uD2F0\uCEE4"
-  - id: 1
-    categoryID: 2
-    itemImg: {fileID: 21300000, guid: f4b17c317ff0b2741aebc2c82c0925d9, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
-    slotNumForPlayer: 0
-    name: "\uD3EC\uD1A0\uCE74\uB4DC"
-  - id: 2
-    categoryID: 2
-    itemImg: {fileID: 21300000, guid: 977e2192888a40c40be1075dc9226e4f, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
-    slotNumForPlayer: 0
-    name: "\uD3EC\uCE74\uD640\uB354"
-  - id: 3
-    categoryID: 2
-    itemImg: {fileID: 21300000, guid: 4e7471d6e800bcd4589ccdbb1f522055, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
     slotNumForPlayer: 0
     name: "\uCF5C\uB809\uD2B8\uBD81"
   canUseLevel: 0
@@ -11301,37 +11185,37 @@ MonoBehaviour:
   - id: 0
     categoryID: 11
     itemImg: {fileID: 21300000, guid: 72d15a7ea874453409047d451216d6fb, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 75
+    priceForOrder: 350
+    exp: 72
+    jewel: 8
     slotNumForPlayer: 0
     name: "\uBC43\uC9C0"
   - id: 1
     categoryID: 11
     itemImg: {fileID: 21300000, guid: b77dc36d998cb6445be463d1ba72b0f4, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 155
+    priceForOrder: 720
+    exp: 90
+    jewel: 10
     slotNumForPlayer: 0
     name: "\uAE08\uC18D \uBBF8\uB2C8\uD0A4\uB9C1 "
   - id: 2
     categoryID: 11
     itemImg: {fileID: 21300000, guid: 67e12b8a1768e9c47b7ff00efdf0d3d3, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 330
+    priceForOrder: 1450
+    exp: 125
+    jewel: 15
     slotNumForPlayer: 0
     name: "\uAE30\uBCF8 \uAE08\uC18D \uD0A4\uB9C1\uC138\uD2B8"
   - id: 2
     categoryID: 11
     itemImg: {fileID: 21300000, guid: 9d9630d207a36714c8d1f633230c89ac, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 700
+    priceForOrder: 2500
+    exp: 150
+    jewel: 20
     slotNumForPlayer: 0
     name: "\uD504\uB9AC\uBBF8\uC5C4 \uAE08\uC18D \uD0A4\uB9C1\uC138\uD2B8"
   canUseLevel: 30
@@ -12141,28 +12025,28 @@ MonoBehaviour:
   - id: 0
     categoryID: 10
     itemImg: {fileID: 21300000, guid: 52af278941e9ba046b086b5fb49445cc, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 75
+    priceForOrder: 350
+    exp: 72
+    jewel: 8
     slotNumForPlayer: 0
     name: "\uD50C\uB77C\uC2A4\uD2F1 \uD0A4\uB9C1"
   - id: 1
     categoryID: 10
     itemImg: {fileID: 21300000, guid: 9d1c9e8b3b795ff4da711b72cc645d23, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 155
+    priceForOrder: 720
+    exp: 90
+    jewel: 10
     slotNumForPlayer: 0
     name: "\uD50C\uB77C\uC2A4\uD2F1 \uD140\uBE14\uB7EC"
   - id: 2
     categoryID: 10
     itemImg: {fileID: 21300000, guid: e6112335263089b42b07ddaeeff82370, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
+    priceForPlayer: 330
+    priceForOrder: 1450
+    exp: 125
+    jewel: 15
     slotNumForPlayer: 0
     name: "\uC544\uD06C\uB9B4 \uC2A4\uD0E0\uB4DC"
   canUseLevel: 30
@@ -12359,8 +12243,7 @@ MonoBehaviour:
   m_text: X
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
-  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd,
-    type: 2}
+  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13101,8 +12984,7 @@ MonoBehaviour:
   m_text: Diamond
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
-  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd,
-    type: 2}
+  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13508,6 +13390,7 @@ MonoBehaviour:
     priceForOrder: 5
     exp: 1
     jewel: 0
+    slotNumForPlayer: 0
     name: "\uC12C\uC720"
   - id: 1
     categoryID: 3
@@ -13516,6 +13399,7 @@ MonoBehaviour:
     priceForOrder: 10
     exp: 2
     jewel: 1
+    slotNumForPlayer: 0
     name: "\uBBF8\uB2C8\uBC30\uB108"
   - id: 2
     categoryID: 3
@@ -13524,6 +13408,7 @@ MonoBehaviour:
     priceForOrder: 30
     exp: 5
     jewel: 1
+    slotNumForPlayer: 0
     name: "\uC2AC\uB85C\uAC74"
   - id: 3
     categoryID: 3
@@ -13532,41 +13417,6 @@ MonoBehaviour:
     priceForOrder: 50
     exp: 10
     jewel: 3
-    name: "\uD328\uBE0C\uB9AD \uD3EC\uC2A4\uD130"
-  - id: 0
-    categoryID: 3
-    itemImg: {fileID: 21300000, guid: 81f848e6bf975224e9bfa7771c968d12, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
-    slotNumForPlayer: 0
-    name: "\uC12C\uC720"
-  - id: 1
-    categoryID: 3
-    itemImg: {fileID: 21300000, guid: 7fdeeda17aeda4d41b6518fa87d7a8f9, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
-    slotNumForPlayer: 0
-    name: "\uBBF8\uB2C8\uBC30\uB108"
-  - id: 2
-    categoryID: 3
-    itemImg: {fileID: 21300000, guid: bb123c76240a0bf479f7cd6cc3d63bc0, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
-    slotNumForPlayer: 0
-    name: "\uC2AC\uB85C\uAC74"
-  - id: 3
-    categoryID: 3
-    itemImg: {fileID: 21300000, guid: d035182fe058bf74b9d5dd4eabb58ead, type: 3}
-    priceForPlayer: 0
-    priceForOrder: 0
-    exp: 0
-    jewel: 0
     slotNumForPlayer: 0
     name: "\uD328\uBE0C\uB9AD \uD3EC\uC2A4\uD130"
   canUseLevel: 0
