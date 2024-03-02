@@ -13,5 +13,6 @@ public class MaterialItemData
     public float exp;
     public int jewel;
 
+    public int slotNumForPlayer;
     public string name;
 }

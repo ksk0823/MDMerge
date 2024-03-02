@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class GeneratorLockManager : MonoBehaviour
 {
-    GameObject[] generators;
+    public List<GeneratorItemData> generators;
 
     public TMP_Text unlockText;
     public GameObject UnlockPanel;
@@ -15,7 +15,16 @@ public class GeneratorLockManager : MonoBehaviour
 
     void Start()
     {
-        generators = GameObject.FindGameObjectsWithTag("GeneratorData");
+        GameObject[] gos = GameObject.FindGameObjectsWithTag("GeneratorData");
+        foreach (GameObject go in gos) 
+        {
+            GeneratorItemData item = go.GetComponent<GeneratorItemData>();
+            generators.Add(item);
+        }
+        generators.Sort((x, y) => x.id.CompareTo(y.id));
+
+        checkPlayerDataGenerators();
+
         checkIsAvailable();
     }
 
@@ -26,15 +35,13 @@ public class GeneratorLockManager : MonoBehaviour
 
     public void unlockGenerator()
     {
-        foreach (GameObject generator in generators)
+        foreach (GeneratorItemData generator in generators)
         {
-            GeneratorItemData item = generator.GetComponent<GeneratorItemData>();
-
-            if (item.id == unlockID)
+            if (generator.id == unlockID)
             {
-                int tempLevel = item.canUseLevel;
-                int tempMoney = item.unlockMoney;
-                int tempJewel = item.unlockJewel;
+                int tempLevel = generator.canUseLevel;
+                int tempMoney = generator.unlockMoney;
+                int tempJewel = generator.unlockJewel;
 
                 if (PlayerData.instance.level >= tempLevel
                     && PlayerData.instance.money >= tempMoney
@@ -42,7 +49,19 @@ public class GeneratorLockManager : MonoBehaviour
                 {
                     PlayerData.instance.money = PlayerData.instance.money - tempMoney;
                     PlayerData.instance.jewel = PlayerData.instance.jewel - tempJewel;
-                    item.available = true;
+                    if (generator.isClickable)
+                    {
+                        PlayerData.instance.generators[generator.id] = true;
+                        PlayerData.instance.generators[(generator.id)+1] = true;
+                        generator.available = true;
+                        generators[unlockID+1].GetComponent<GeneratorItemData>().available = true;
+                    }
+                    else
+                    {
+                        PlayerData.instance.generators[generator.id] = true;
+                        generator.available = true;
+                    }
+
                     checkIsAvailable();
                     UnlockPanel.SetActive(false);
                 }
@@ -68,15 +87,13 @@ public class GeneratorLockManager : MonoBehaviour
 
     public void setUnlockText(int id)
     {
-        foreach (GameObject generator in generators)
+        foreach (GeneratorItemData generator in generators)
         {
-            GeneratorItemData item = generator.GetComponent<GeneratorItemData>();
-
-            if (item.id == id)
+            if (generator.id == id)
             {
-                int tempLevel = item.canUseLevel;
-                int tempMoney = item.unlockMoney;
-                int tempJewel = item.unlockJewel;
+                int tempLevel = generator.canUseLevel;
+                int tempMoney = generator.unlockMoney;
+                int tempJewel = generator.unlockJewel;
 
                 if (tempJewel > 0)
                 {
@@ -97,37 +114,56 @@ public class GeneratorLockManager : MonoBehaviour
 
     }
 
+    // 플레이 시작 시 playerData에서 생성기 해금 여부 확인
+    public void checkPlayerDataGenerators()
+    {
+        bool[] bools = PlayerData.instance.generators;
+        int index = 0;
+        foreach (bool check in bools)
+        {
+            if (check)
+            {
+                generators[index].available = true;
+            }
+            else
+            {
+                generators[index].available = false;
+            }
+            index++;
+        }
+    }
+
     public void checkIsAvailable() 
     {
-        foreach (GameObject generator in generators) 
+        foreach (GeneratorItemData generator in generators) 
         {
-            GeneratorItemData item = generator.GetComponent<GeneratorItemData>();
-            
-            if (item.id == 4)
+            if (generator.id == 4)
             {
-                if (!item.available)
+                if (!generator.available)
                 {
                     GameObject buttonObject = GameObject.FindGameObjectWithTag("factoryButton");
                     Button button = buttonObject.GetComponent<Button>();
                     button.interactable = false;
-                    //buttonObject.GetComponentInChildren<Button>().interactable = true;
                 }
                 else
                 {
                     GameObject buttonObject = GameObject.FindGameObjectWithTag("factoryButton");
                     Button button = buttonObject.GetComponent<Button>();
-                    if (!button.interactable)
+                    
+                    Transform buttonTr = buttonObject.transform;
+                    if (buttonTr.childCount > 0)
                     {
-                        button.interactable = true;
                         GameObject lockButton = buttonObject.transform.GetChild(0).gameObject;
                         Destroy(lockButton);
                     }
+
+                    button.interactable = true;
                 }
             }
 
-            if (item.id == 6)
+            if (generator.id == 6)
             {
-                if (!item.available)
+                if (!generator.available)
                 {
                     GameObject buttonObject = GameObject.FindGameObjectWithTag("sewingButton");
                     Button button = buttonObject.GetComponent<Button>();
@@ -137,18 +173,19 @@ public class GeneratorLockManager : MonoBehaviour
                 {
                     GameObject buttonObject = GameObject.FindGameObjectWithTag("sewingButton");
                     Button button = buttonObject.GetComponent<Button>();
-                    if (!button.interactable)
+                    button.interactable = true;
+                    Transform buttonTr = buttonObject.transform;
+                    if (buttonTr.childCount > 0)
                     {
-                        button.interactable = true;
                         GameObject lockButton = buttonObject.transform.GetChild(0).gameObject;
                         Destroy(lockButton);
                     }
                 }
             }
 
-            if (item.id == 8)
+            if (generator.id == 8)
             {
-                if (!item.available)
+                if (!generator.available)
                 {
                     GameObject buttonObject = GameObject.FindGameObjectWithTag("accessoryButton");
                     Button button = buttonObject.GetComponent<Button>();
@@ -158,7 +195,8 @@ public class GeneratorLockManager : MonoBehaviour
                 {
                     GameObject buttonObject = GameObject.FindGameObjectWithTag("accessoryButton");
                     Button button = buttonObject.GetComponent<Button>();
-                    if (!button.interactable)
+                    Transform buttonTr = buttonObject.transform;
+                    if (buttonTr.childCount > 0)
                     {
                         button.interactable = true;
                         GameObject lockButton = buttonObject.transform.GetChild(0).gameObject;
@@ -167,9 +205,9 @@ public class GeneratorLockManager : MonoBehaviour
                 }
             }
 
-            if (item.id == 9)
+            if (generator.id == 9)
             {
-                if (!item.available)
+                if (!generator.available)
                 {
                     GameObject buttonObject = GameObject.FindGameObjectWithTag("potteryButton");
                     Button button = buttonObject.GetComponent<Button>();
@@ -180,7 +218,8 @@ public class GeneratorLockManager : MonoBehaviour
                 {
                     GameObject buttonObject = GameObject.FindGameObjectWithTag("potteryButton");
                     Button button = buttonObject.GetComponent<Button>();
-                    if (!button.interactable)
+                    Transform buttonTr = buttonObject.transform;
+                    if (buttonTr.childCount > 0)
                     {
                         button.interactable = true;
                         GameObject lockButton = buttonObject.transform.GetChild(0).gameObject;
@@ -189,9 +228,9 @@ public class GeneratorLockManager : MonoBehaviour
                 }
             }
 
-            if (item.id == 10)
+            if (generator.id == 10)
             {
-                if (!item.available)
+                if (!generator.available)
                 {
                     GameObject buttonObject = GameObject.FindGameObjectWithTag("furnaceButton");
                     Button button = buttonObject.GetComponent<Button>();
@@ -201,7 +240,8 @@ public class GeneratorLockManager : MonoBehaviour
                 {
                     GameObject buttonObject = GameObject.FindGameObjectWithTag("furnaceButton");
                     Button button = buttonObject.GetComponent<Button>();
-                    if (!button.interactable)
+                    Transform buttonTr = buttonObject.transform;
+                    if (buttonTr.childCount > 0)
                     {
                         button.interactable = true;
                         GameObject lockButton = buttonObject.transform.GetChild(0).gameObject;

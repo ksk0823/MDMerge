@@ -9,7 +9,11 @@ public class DiamondUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerData.instance.test_EMJ();
+        if (PlayerData.instance.isFirstPlay)
+        {
+            PlayerData.instance.test_EMJ();
+            PlayerData.instance.isFirstPlay = false;
+        }
         SetDiamondText();
     }
     private void SetDiamondText()

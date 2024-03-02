@@ -15366,6 +15366,8 @@ MonoBehaviour:
   exp: 0
   orderCnt: 0
   lockNum: 0
+  isFirstPlay: 1
+  generators: 010101010000000000000000
 --- !u!4 &1980247611
 Transform:
   m_ObjectHideFlags: 0

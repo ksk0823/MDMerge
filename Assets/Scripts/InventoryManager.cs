@@ -1,5 +1,7 @@
+using Microsoft.Unity.VisualStudio.Editor;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
@@ -19,6 +21,48 @@ public class InventoryManager : MonoBehaviour
         Instance = this;
 
         slots = innerPanelTransform.GetComponentsInChildren<Slot>();
+
+        loadInventory();
+    }
+
+    void loadInventory()
+    {
+        if (PlayerData.instance.inventory == null)
+        {
+            // 첫 플레이 시
+            PlayerData.instance.inventory = new List<MaterialItemData>();
+        }
+        else
+        {
+
+            GameObject[] emptySlots = GetEmptyInventorySlots();
+
+            // 첫 플레이가 아닐 시 기존 인벤토리 불러오기
+            foreach (MaterialItemData item in PlayerData.instance.inventory)
+            {
+                GameObject go = Instantiate(itemPrefab, emptySlots[item.slotNumForPlayer].transform.position, Quaternion.identity);
+                go.GetComponent<MaterialCtrl>().InitMaterial(generatorsData[item.categoryID].materialsData[item.id], emptySlots[item.slotNumForPlayer].transform);
+            }
+
+            PlayerData.instance.inventory.Clear();
+        }
+    }
+
+    public void saveInventory() 
+    {
+
+        foreach (Slot slot in slots)
+        {
+            if (!(slot.item == null))
+            {
+                GameObject go = slot.item;
+                MaterialItemData item = new MaterialItemData();
+                item.id = go.GetComponent<MaterialCtrl>().material.id;
+                item.categoryID = go.GetComponent<MaterialCtrl>().material.categoryID;
+                item.slotNumForPlayer = slot.index;
+                PlayerData.instance.inventory.Add(item);
+            }
+        }
     }
 
     GameObject[] GetEmptyInventorySlots() 
@@ -30,6 +74,8 @@ public class InventoryManager : MonoBehaviour
             if (s.item == null)
                 emptySlots.Add(s.gameObject);
         }
+
+        emptySlots.Sort((x, y) => x.GetComponent<Slot>().index.CompareTo(y.GetComponent<Slot>().index));
 
         if (emptySlots.Count == 0) 
         {

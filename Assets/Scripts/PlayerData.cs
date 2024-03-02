@@ -17,7 +17,16 @@ public class PlayerData : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;
+        if (Instance != this && Instance != null)
+        {
+            Destroy(this);
+            return;
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
     }
 
     public void test_EMJ()
@@ -31,7 +40,7 @@ public class PlayerData : MonoBehaviour
         exp = 10;
         orderCnt = 0;
     }
-   
+
 
     public int energy;
     public int money;
@@ -42,4 +51,7 @@ public class PlayerData : MonoBehaviour
     public int exp;
     public int orderCnt; //지금 order개수
     public int lockNum;
+    public bool isFirstPlay = true; // 첫 플레이 여부
+    public bool[] generators; //생성기 해금 여부
+    public List<MaterialItemData> inventory;
 }

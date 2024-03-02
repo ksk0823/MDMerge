@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 
 public class Slot : MonoBehaviour, IDropHandler
 {
+    public int index;
     public GameObject item
     {
         get 
@@ -40,7 +41,7 @@ public class Slot : MonoBehaviour, IDropHandler
                 return;
             }
 
-            if (dragItem.material.id == soltItem.material.id)
+            if ((dragItem.material.id == soltItem.material.id) && (dragItem.material.categoryID == soltItem.material.categoryID))
             {
                 int backupCategoryID = dragItem.material.categoryID;
                 int backupID = dragItem.material.id;
