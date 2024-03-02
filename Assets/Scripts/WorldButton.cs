@@ -19,6 +19,7 @@ public class WorldButton : MonoBehaviour
 
     public void toMapMode()
     {
+        //GenerateOrder.Instance.saveOrderInventory();
         InventoryManager.Instance.saveInventory();
         SceneManager.LoadScene("MapMode", LoadSceneMode.Single);
     }

@@ -8805,6 +8805,7 @@ MonoBehaviour:
   generators: 
   mapUnlocks: 
   inventory: []
+  orderInventory: []
 --- !u!4 &1306913734
 Transform:
   m_ObjectHideFlags: 0
