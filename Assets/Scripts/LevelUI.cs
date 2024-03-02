@@ -8,6 +8,7 @@ public class LevelUI : MonoBehaviour
     public TMP_Text levelText;
     public GameObject PlayerPanel;
     public TMP_Text playerText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,7 @@ public class LevelUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        updateLevel();
         SetLevelText();
     }
     public void viewPlayerPanel()
@@ -38,11 +40,27 @@ public class LevelUI : MonoBehaviour
         PlayerPanel.SetActive(false);
     }
 
-    public void setPlayerText()
+    public void updateLevel()
     {
         int tempExp = PlayerData.instance.exp;
         int templevel = PlayerData.instance.level;
-        int tempFullExp = templevel * 100;
+        int tempFullExp = templevel * 10;
+
+        while (tempExp >= tempFullExp)
+        {
+            PlayerData.instance.level++;
+            PlayerData.instance.exp -= tempFullExp;
+            tempExp = PlayerData.instance.exp;
+            templevel = PlayerData.instance.level;
+            tempFullExp = templevel * 10;
+        }
+    }
+
+    public void setPlayerText()
+    {
+        int tempExp = PlayerData.instance.exp;
+        int tempFullExp = PlayerData.instance.level * 10;
+
         int tempPercent = (int)(((double)tempExp / (double)tempFullExp) * 100.00);
         playerText.SetText("Level: " +PlayerData.instance.level.ToString()
             + "\nExp: " + tempExp.ToString() + "/" + tempFullExp +" (" + tempPercent +"%)"

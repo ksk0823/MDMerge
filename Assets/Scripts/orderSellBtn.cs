@@ -30,10 +30,11 @@ public class orderSellBtn : MonoBehaviour
             //player재화 변동
             int price = int.Parse(priceText.text);
             int exp = int.Parse(expText.text);
+            int jem = transform.parent.GetComponent<OrderObject>().orderJem;
+
             Debug.Log("order price = " + price);
             Debug.Log("order exp = " + exp);
-            //int jem = orderObject.jem
-            int jem = 0;
+            
             PlayerData.instance.money += price;
             PlayerData.instance.exp += exp;
             PlayerData.instance.jewel += jem;

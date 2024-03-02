@@ -107,13 +107,13 @@ public class GenerateOrder : MonoBehaviour
                     = newPrefab.GetComponent<OrderObject>().orderItems[i].itemImg;
                 price += newPrefab.GetComponent<OrderObject>().orderItems[i].priceForOrder;
                 exp += newPrefab.GetComponent<OrderObject>().orderItems[i].exp;
-                //jem += newPrefab.GetComponent<OrderObject>().orderItems[i].jem;
+                jem += newPrefab.GetComponent<OrderObject>().orderItems[i].jewel;
             }
 
             //보상 가격,경험치,보석 설정
             newPrefab.GetComponent<OrderObject>().orderPrice = price;
             newPrefab.GetComponent<OrderObject>().orderExp = exp;
-            newPrefab.GetComponent<OrderObject>().orderJem = jem;
+            newPrefab.GetComponent<OrderObject>().orderJem = jem + OrderItemNum;
 
             //그거에 따라 priceText랑 expText바꿔주기
             newPrefab.transform.Find("OrderSlot").Find("priceText").GetComponent<TMP_Text>().SetText(price.ToString());

@@ -427,7 +427,8 @@ MonoBehaviour:
   m_text: L
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
-  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
+  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -760,8 +761,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1229385603}
+  m_Children: [{fileID: 1229385603}]
   m_Father: {fileID: 540772078}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -914,7 +914,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7372549, g: 0.56078434, b: 0.60784316, a: 1}
+  m_Color: {r: 0.7372549, g: 0.56078434, b: 0.60784316, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1346,8 +1346,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1275036421}
+  m_Children: [{fileID: 1275036421}]
   m_Father: {fileID: 2093221345}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2079,8 +2078,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1879062904}
+  m_Children: [{fileID: 1879062904}]
   m_Father: {fileID: 504845863}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2249,6 +2247,46 @@ MonoBehaviour:
   - id: 0
     categoryID: 0
     itemImg: {fileID: 21300000, guid: 71a0de7c9bb7c46428791ea2219bcf1c, type: 3}
+    priceForPlayer: 1
+    priceForOrder: 5
+    exp: 1
+    jewel: 0
+    name: "\uAC74\uC804\uC9C01\uAC1C"
+  - id: 1
+    categoryID: 0
+    itemImg: {fileID: 21300000, guid: ebe58e12fac070c418dea90a56d3b0ed, type: 3}
+    priceForPlayer: 3
+    priceForOrder: 10
+    exp: 2
+    jewel: 0
+    name: "\uAC74\uC804\uC9C02\uAC1C"
+  - id: 2
+    categoryID: 0
+    itemImg: {fileID: 21300000, guid: f4d44b0817fb10f4a82cd9917f0a2afc, type: 3}
+    priceForPlayer: 7
+    priceForOrder: 30
+    exp: 4
+    jewel: 1
+    name: "\uAC74\uC804\uC9C03\uAC1C"
+  - id: 3
+    categoryID: 0
+    itemImg: {fileID: 21300000, guid: c8c5f5b7faa7a834988dfa80097f7ea6, type: 3}
+    priceForPlayer: 15
+    priceForOrder: 50
+    exp: 7
+    jewel: 2
+    name: "\uC804\uAD6C"
+  - id: 4
+    categoryID: 0
+    itemImg: {fileID: 21300000, guid: 4dcb8f923c1da2d45ba0ac28ac183519, type: 3}
+    priceForPlayer: 40
+    priceForOrder: 100
+    exp: 10
+    jewel: 3
+    name: "\uC751\uC6D0\uBD09"
+  - id: 0
+    categoryID: 0
+    itemImg: {fileID: 21300000, guid: 71a0de7c9bb7c46428791ea2219bcf1c, type: 3}
     priceForPlayer: 0
     priceForOrder: 0
     exp: 0
@@ -2326,8 +2364,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1936706175}
+  m_Children: [{fileID: 1936706175}]
   m_Father: {fileID: 159147405}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2831,7 +2868,8 @@ MonoBehaviour:
   m_text: Player Profile
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc59e41451a40624c94eb78a13971578, type: 2}
-  m_sharedMaterial: {fileID: -5056706401836057112, guid: dc59e41451a40624c94eb78a13971578, type: 2}
+  m_sharedMaterial: {fileID: -5056706401836057112, guid: dc59e41451a40624c94eb78a13971578,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3233,7 +3271,8 @@ MonoBehaviour:
   m_text: X
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
-  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
+  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3381,7 +3420,8 @@ MonoBehaviour:
   m_text: Energy
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
-  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
+  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4344,7 +4384,8 @@ MonoBehaviour:
   m_text: X
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
-  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
+  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6584,7 +6625,8 @@ MonoBehaviour:
   - {fileID: 1836190305}
   - {fileID: 1754260947}
   innerPanelTransform: {fileID: 954852399}
-  itemPrefab: {fileID: 5389604596700818195, guid: 5c63830ac1e424c4e9422a8aad082dec, type: 3}
+  itemPrefab: {fileID: 5389604596700818195, guid: 5c63830ac1e424c4e9422a8aad082dec,
+    type: 3}
 --- !u!1 &980257862
 GameObject:
   m_ObjectHideFlags: 0
@@ -6615,8 +6657,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 867340996}
+  m_Children: [{fileID: 867340996}]
   m_Father: {fileID: 1137546781}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -7003,7 +7044,8 @@ MonoBehaviour:
   m_text: Money
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
-  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
+  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7837,7 +7879,8 @@ MonoBehaviour:
     \uBCF4\uC11D: 50"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc59e41451a40624c94eb78a13971578, type: 2}
-  m_sharedMaterial: {fileID: -5056706401836057112, guid: dc59e41451a40624c94eb78a13971578, type: 2}
+  m_sharedMaterial: {fileID: -5056706401836057112, guid: dc59e41451a40624c94eb78a13971578,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8111,7 +8154,8 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc59e41451a40624c94eb78a13971578, type: 2}
-  m_sharedMaterial: {fileID: -5056706401836057112, guid: dc59e41451a40624c94eb78a13971578, type: 2}
+  m_sharedMaterial: {fileID: -5056706401836057112, guid: dc59e41451a40624c94eb78a13971578,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8457,6 +8501,54 @@ MonoBehaviour:
   id: 1
   available: 1
   materialsData:
+  - id: 0
+    categoryID: 1
+    itemImg: {fileID: 21300000, guid: 154c74c2a0bed264f81926c3366b5fe6, type: 3}
+    priceForPlayer: 1
+    priceForOrder: 5
+    exp: 1
+    jewel: 0
+    name: "\uD544\uB984"
+  - id: 1
+    categoryID: 1
+    itemImg: {fileID: 21300000, guid: 48ac4aba309318e4081814be2ae0d936, type: 3}
+    priceForPlayer: 3
+    priceForOrder: 10
+    exp: 2
+    jewel: 0
+    name: "\uD3F4\uB77C\uB85C\uC774\uB4DC"
+  - id: 2
+    categoryID: 1
+    itemImg: {fileID: 21300000, guid: 30afe0a8879aef8429bacd72bc35360d, type: 3}
+    priceForPlayer: 7
+    priceForOrder: 30
+    exp: 4
+    jewel: 1
+    name: "\uD2F0\uCF13\uD3EC\uCE74"
+  - id: 3
+    categoryID: 1
+    itemImg: {fileID: 21300000, guid: 891add9a89320914eb027d1723354b6c, type: 3}
+    priceForPlayer: 15
+    priceForOrder: 50
+    exp: 7
+    jewel: 2
+    name: "\uC5FD\uC11C\uC138\uD2B8"
+  - id: 4
+    categoryID: 1
+    itemImg: {fileID: 21300000, guid: db5c47c3dd442c349a3dec69ac310b62, type: 3}
+    priceForPlayer: 40
+    priceForOrder: 100
+    exp: 10
+    jewel: 3
+    name: "\uD3EC\uC2A4\uD130"
+  - id: 5
+    categoryID: 1
+    itemImg: {fileID: 21300000, guid: 8f60bde7c589a834aa4b7d4e0dade6c1, type: 3}
+    priceForPlayer: 100
+    priceForOrder: 240
+    exp: 15
+    jewel: 5
+    name: "\uD3EC\uD1A0\uBD81"
   - id: 0
     categoryID: 1
     itemImg: {fileID: 21300000, guid: 154c74c2a0bed264f81926c3366b5fe6, type: 3}
@@ -8967,7 +9059,8 @@ MonoBehaviour:
     Name: \uC5B4\uCA4C\uAD6C\uC18C\uB144\uB4E4"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc59e41451a40624c94eb78a13971578, type: 2}
-  m_sharedMaterial: {fileID: -5056706401836057112, guid: dc59e41451a40624c94eb78a13971578, type: 2}
+  m_sharedMaterial: {fileID: -5056706401836057112, guid: dc59e41451a40624c94eb78a13971578,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9142,19 +9235,11 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1315547142}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1315547144}
-        m_TargetAssemblyTypeName: SellJustOneButton, Assembly-CSharp
-        m_MethodName: SellJustOne
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: [{m_Target: {fileID: 1315547144}, m_TargetAssemblyTypeName: 'SellJustOneButton,
+            Assembly-CSharp', m_MethodName: SellJustOne, m_Mode: 1, m_Arguments: {
+            m_ObjectArgument: {fileID: 0}, m_ObjectArgumentAssemblyTypeName: 'UnityEngine.Object,
+              UnityEngine', m_IntArgument: 0, m_FloatArgument: 0, m_StringArgument: '',
+            m_BoolArgument: 0}, m_CallState: 2}]
 --- !u!114 &1315547142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10581,6 +10666,38 @@ MonoBehaviour:
   - id: 0
     categoryID: 2
     itemImg: {fileID: 21300000, guid: 03a63e0643ce34b41b38df8ac4ad2785, type: 3}
+    priceForPlayer: 1
+    priceForOrder: 5
+    exp: 1
+    jewel: 0
+    name: "\uC2A4\uD2F0\uCEE4"
+  - id: 1
+    categoryID: 2
+    itemImg: {fileID: 21300000, guid: f4b17c317ff0b2741aebc2c82c0925d9, type: 3}
+    priceForPlayer: 3
+    priceForOrder: 10
+    exp: 2
+    jewel: 1
+    name: "\uD3EC\uD1A0\uCE74\uB4DC"
+  - id: 2
+    categoryID: 2
+    itemImg: {fileID: 21300000, guid: 977e2192888a40c40be1075dc9226e4f, type: 3}
+    priceForPlayer: 7
+    priceForOrder: 30
+    exp: 5
+    jewel: 1
+    name: "\uD3EC\uCE74\uD640\uB354"
+  - id: 3
+    categoryID: 2
+    itemImg: {fileID: 21300000, guid: 4e7471d6e800bcd4589ccdbb1f522055, type: 3}
+    priceForPlayer: 15
+    priceForOrder: 50
+    exp: 10
+    jewel: 3
+    name: "\uCF5C\uB809\uD2B8\uBD81"
+  - id: 0
+    categoryID: 2
+    itemImg: {fileID: 21300000, guid: 03a63e0643ce34b41b38df8ac4ad2785, type: 3}
     priceForPlayer: 0
     priceForOrder: 0
     exp: 0
@@ -10885,7 +11002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.7803922, b: 0.83921576, a: 1}
+  m_Color: {r: 1, g: 0.87735844, b: 0.9067924, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12242,7 +12359,8 @@ MonoBehaviour:
   m_text: X
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
-  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
+  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12983,7 +13101,8 @@ MonoBehaviour:
   m_text: Diamond
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
-  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd, type: 2}
+  m_sharedMaterial: {fileID: -966404140069374386, guid: d13f4f8686cfd1745b4445d5151e9dfd,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13382,6 +13501,38 @@ MonoBehaviour:
   id: 3
   available: 1
   materialsData:
+  - id: 0
+    categoryID: 3
+    itemImg: {fileID: 21300000, guid: 81f848e6bf975224e9bfa7771c968d12, type: 3}
+    priceForPlayer: 1
+    priceForOrder: 5
+    exp: 1
+    jewel: 0
+    name: "\uC12C\uC720"
+  - id: 1
+    categoryID: 3
+    itemImg: {fileID: 21300000, guid: 7fdeeda17aeda4d41b6518fa87d7a8f9, type: 3}
+    priceForPlayer: 3
+    priceForOrder: 10
+    exp: 2
+    jewel: 1
+    name: "\uBBF8\uB2C8\uBC30\uB108"
+  - id: 2
+    categoryID: 3
+    itemImg: {fileID: 21300000, guid: bb123c76240a0bf479f7cd6cc3d63bc0, type: 3}
+    priceForPlayer: 7
+    priceForOrder: 30
+    exp: 5
+    jewel: 1
+    name: "\uC2AC\uB85C\uAC74"
+  - id: 3
+    categoryID: 3
+    itemImg: {fileID: 21300000, guid: d035182fe058bf74b9d5dd4eabb58ead, type: 3}
+    priceForPlayer: 15
+    priceForOrder: 50
+    exp: 10
+    jewel: 3
+    name: "\uD328\uBE0C\uB9AD \uD3EC\uC2A4\uD130"
   - id: 0
     categoryID: 3
     itemImg: {fileID: 21300000, guid: 81f848e6bf975224e9bfa7771c968d12, type: 3}
