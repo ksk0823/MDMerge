@@ -711,7 +711,7 @@ MonoBehaviour:
     slotNumForPlayer: 0
     name: "\uBC18\uC9C0"
   canUseLevel: 15
-  unlockMoney: 5000
+  unlockMoney: 1700
   unlockJewel: 0
   isClickable: 0
   prob: []
@@ -1743,7 +1743,7 @@ MonoBehaviour:
     slotNumForPlayer: 0
     name: "\uBC14\uC2DC\uD2F0\uC790\uCF13"
   canUseLevel: 5
-  unlockMoney: 1000
+  unlockMoney: 500
   unlockJewel: 0
   isClickable: 1
   prob: []
@@ -1840,7 +1840,7 @@ MonoBehaviour:
     slotNumForPlayer: 0
     name: "50cm \uC778\uD615"
   canUseLevel: 10
-  unlockMoney: 3000
+  unlockMoney: 1000
   unlockJewel: 0
   isClickable: 1
   prob: []
@@ -4478,8 +4478,8 @@ MonoBehaviour:
     slotNumForPlayer: 0
     name: "\uBA38\uADF8\uCEF5\uC138\uD2B8"
   canUseLevel: 20
-  unlockMoney: 10000
-  unlockJewel: 50
+  unlockMoney: 2500
+  unlockJewel: 25
   isClickable: 0
   prob: []
 --- !u!4 &602201469
@@ -5172,7 +5172,7 @@ MonoBehaviour:
     slotNumForPlayer: 0
     name: "\uBC31\uD329"
   canUseLevel: 10
-  unlockMoney: 3000
+  unlockMoney: 1000
   unlockJewel: 0
   isClickable: 1
   prob: []
@@ -8907,7 +8907,7 @@ MonoBehaviour:
     slotNumForPlayer: 0
     name: "\uBC84\uD0B7\uD587"
   canUseLevel: 5
-  unlockMoney: 1000
+  unlockMoney: 500
   unlockJewel: 0
   isClickable: 1
   prob: []
@@ -11219,8 +11219,8 @@ MonoBehaviour:
     slotNumForPlayer: 0
     name: "\uD504\uB9AC\uBBF8\uC5C4 \uAE08\uC18D \uD0A4\uB9C1\uC138\uD2B8"
   canUseLevel: 30
-  unlockMoney: 20000
-  unlockJewel: 100
+  unlockMoney: 3000
+  unlockJewel: 30
   isClickable: 1
   prob: []
 --- !u!4 &1754260948
@@ -12050,8 +12050,8 @@ MonoBehaviour:
     slotNumForPlayer: 0
     name: "\uC544\uD06C\uB9B4 \uC2A4\uD0E0\uB4DC"
   canUseLevel: 30
-  unlockMoney: 20000
-  unlockJewel: 100
+  unlockMoney: 3000
+  unlockJewel: 30
   isClickable: 1
   prob: []
 --- !u!4 &1836190306
