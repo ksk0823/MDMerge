@@ -5,17 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuButtonsUI : MonoBehaviour
 {
+    public GameObject waitPanel;
     public void newGameButton()
     {
         SceneManager.LoadScene("MapMode", LoadSceneMode.Single);
     }
     public void loadGameButton()
     {
-        SceneManager.LoadScene("MergeMode", LoadSceneMode.Single);
+        waitPanel.SetActive(true);
     }
     public void settingsButton()
     {
-        
+        waitPanel.SetActive(true);
     }
     public void quitButton()
     {

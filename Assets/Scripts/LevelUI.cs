@@ -15,7 +15,7 @@ public class LevelUI : MonoBehaviour
         if (PlayerData.instance.isFirstPlay)
         {
             PlayerData.instance.test_EMJ();
-            PlayerData.instance.isFirstPlay = false;
+            //PlayerData.instance.isFirstPlay = false;
         }
         SetLevelText();
     }
