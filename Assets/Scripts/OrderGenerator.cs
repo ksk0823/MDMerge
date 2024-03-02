@@ -37,8 +37,8 @@ public class GenerateOrder : MonoBehaviour
     {
         Booth = GameObject.Find("BoothData");
         Camera = GameObject.Find("CameraData");
-        Printer1 = GameObject.Find("PrintData1");
-        Printer2 = GameObject.Find("PrintData2");
+        Printer1 = GameObject.Find("PrinterData1");
+        Printer2 = GameObject.Find("PrinterData2");
         Factory1 = GameObject.Find("FactoryData1");
         Factory2 = GameObject.Find("FactoryData2");
         Sewing1 = GameObject.Find("SewingData1");
