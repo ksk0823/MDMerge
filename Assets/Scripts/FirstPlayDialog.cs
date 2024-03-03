@@ -69,7 +69,10 @@ public class FirstPlayDialog : MonoBehaviour
         list.Add(new dialogObject(playerName, "(잘 해야죠... ㅎㅎ)", 1));
         list.Add(new dialogObject("부장님", "우선 MD 부스에서 팔 MD 물품들부터 차근차근 제작하고 판 다음에", 0));
         list.Add(new dialogObject("부장님", "판 돈으로 콘서트 지역을 늘리면서 제작할 MD 품목들도 늘리면 될 겁니다.", 0));
-        list.Add(new dialogObject("부장님", "물건을 제작할 때마다 에너지가 1씩 소비되고", 0));
+        list.Add(new dialogObject("부장님", "작업실(플레이 화면)에서 잠금이 풀린 생성기 버튼을 누르면 아이템이 단계별로 생성될 겁니다.", 0));
+        list.Add(new dialogObject("부장님", "같은 레벨과 같은 생성기에서 나온 아이템들끼리만 합칠 수 있으니 그 점 유의하시길 바랍니다.", 0));
+        list.Add(new dialogObject("부장님", "몇몇 생성기는 두 종류의 아이템들이 나오기도 하니 잘 구분해서 MD를 제작하세요.", 0));
+        list.Add(new dialogObject("부장님", "그리고 물건을 제작할 때마다 에너지가 1씩 소비되고", 0));
         list.Add(new dialogObject("부장님", "소비한 에너지는 회사 내 상점에서 구매한 물품들로 충전 가능 하니 참고하세요.", 0));
         list.Add(new dialogObject("부장님", "그러면 콘서트 운영 파이팅입니다!", 1));
         list.Add(new dialogObject(playerName, "넵... 파이팅...!!ㅠ", 1));
