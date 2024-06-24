@@ -25,7 +25,7 @@ Tool: Unity
 
 **1. 메인 화면에서 NEW GAME 버튼을 누르고 플레이어와 아이돌 그룹의 이름을 정한 뒤, 튜토리얼 설명을 읽는다.**
 
-<img src="[https://raw.githubusercontent.com/ksk0823/MDMerge/main/%EC%84%A4%EB%AA%85_2.png](https://github.com/ksk0823/MDMerge/blob/main/%EC%84%A4%EB%AA%85_2.png)">
+<img src="https://github.com/ksk0823/MDMerge/blob/main/%EC%84%A4%EB%AA%85_2.png">
 
 <img src="https://github.com/ksk0823/MDMerge/blob/main/%EC%84%A4%EB%AA%85_3.png">
 
